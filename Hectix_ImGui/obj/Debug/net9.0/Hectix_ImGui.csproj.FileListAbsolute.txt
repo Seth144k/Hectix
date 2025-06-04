@@ -1,0 +1,12 @@
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/bin/Debug/net9.0/Hectix_ImGui.deps.json
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/bin/Debug/net9.0/Hectix_ImGui.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/bin/Debug/net9.0/Hectix_ImGui.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/obj/Debug/net9.0/Hectix_ImGui.csproj.AssemblyReference.cache
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/obj/Debug/net9.0/Hectix_ImGui.GeneratedMSBuildEditorConfig.editorconfig
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/obj/Debug/net9.0/Hectix_ImGui.AssemblyInfoInputs.cache
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/obj/Debug/net9.0/Hectix_ImGui.AssemblyInfo.cs
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/obj/Debug/net9.0/Hectix_ImGui.csproj.CoreCompileInputs.cache
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/obj/Debug/net9.0/Hectix_ImGui.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/obj/Debug/net9.0/refint/Hectix_ImGui.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/obj/Debug/net9.0/Hectix_ImGui.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/obj/Debug/net9.0/ref/Hectix_ImGui.dll

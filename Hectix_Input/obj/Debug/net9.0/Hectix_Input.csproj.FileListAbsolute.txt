@@ -1,0 +1,12 @@
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/bin/Debug/net9.0/Hectix_Input.deps.json
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/bin/Debug/net9.0/Hectix_Input.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/bin/Debug/net9.0/Hectix_Input.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/Hectix_Input.csproj.AssemblyReference.cache
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/Hectix_Input.GeneratedMSBuildEditorConfig.editorconfig
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/Hectix_Input.AssemblyInfoInputs.cache
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/Hectix_Input.AssemblyInfo.cs
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/Hectix_Input.csproj.CoreCompileInputs.cache
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/Hectix_Input.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/refint/Hectix_Input.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/Hectix_Input.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/ref/Hectix_Input.dll

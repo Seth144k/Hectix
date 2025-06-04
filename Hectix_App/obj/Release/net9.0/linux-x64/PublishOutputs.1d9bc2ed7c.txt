@@ -1,0 +1,4 @@
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Release/net9.0/linux-x64/publish/Hectix_App.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Release/net9.0/linux-x64/publish/Hectix_Engine.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Release/net9.0/linux-x64/publish/Hectix_Renderer.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Release/net9.0/linux-x64/publish/Hectix_App

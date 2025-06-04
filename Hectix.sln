@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hectix_App", "Hectix_App\Hectix_App.csproj", "{8DCE90C5-0B97-61DC-B90A-A15575809465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hectix_Engine", "Hectix_Engine\Hectix_Engine.csproj", "{5A723FCE-8705-44DF-9FE4-14DCCF45A9CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hectix_Editor", "Hectix_Editor\Hectix_Editor.csproj", "{B30CD060-F19D-4A47-B142-E6AF8DF78C48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hectix_Renderer", "Hectix_Renderer\Hectix_Renderer.csproj", "{82D23952-DB0E-4ACF-BCC7-9E906A9FA4DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hectix_ImGui", "Hectix_ImGui\Hectix_ImGui.csproj", "{DE1626D0-CF8D-4B37-B7B1-B276EA7E33C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hectix_Input", "Hectix_Input\Hectix_Input.csproj", "{988EFA49-8533-408F-90EE-3A2FF123A61D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DCE90C5-0B97-61DC-B90A-A15575809465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DCE90C5-0B97-61DC-B90A-A15575809465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DCE90C5-0B97-61DC-B90A-A15575809465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DCE90C5-0B97-61DC-B90A-A15575809465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A723FCE-8705-44DF-9FE4-14DCCF45A9CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A723FCE-8705-44DF-9FE4-14DCCF45A9CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A723FCE-8705-44DF-9FE4-14DCCF45A9CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A723FCE-8705-44DF-9FE4-14DCCF45A9CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B30CD060-F19D-4A47-B142-E6AF8DF78C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B30CD060-F19D-4A47-B142-E6AF8DF78C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30CD060-F19D-4A47-B142-E6AF8DF78C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B30CD060-F19D-4A47-B142-E6AF8DF78C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D23952-DB0E-4ACF-BCC7-9E906A9FA4DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D23952-DB0E-4ACF-BCC7-9E906A9FA4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D23952-DB0E-4ACF-BCC7-9E906A9FA4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D23952-DB0E-4ACF-BCC7-9E906A9FA4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE1626D0-CF8D-4B37-B7B1-B276EA7E33C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1626D0-CF8D-4B37-B7B1-B276EA7E33C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1626D0-CF8D-4B37-B7B1-B276EA7E33C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1626D0-CF8D-4B37-B7B1-B276EA7E33C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988EFA49-8533-408F-90EE-3A2FF123A61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988EFA49-8533-408F-90EE-3A2FF123A61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988EFA49-8533-408F-90EE-3A2FF123A61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988EFA49-8533-408F-90EE-3A2FF123A61D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC017BA8-5849-41A4-B066-E041AF3B0F59}
+	EndGlobalSection
+EndGlobal
