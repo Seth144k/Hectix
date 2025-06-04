@@ -5,13 +5,13 @@ namespace Hectix.Input;
 
 public class InputManager
 {
-    private IKeyboard keyboard;
-    private IMouse mouse;
+    private readonly IKeyboard keyboard;
+    private readonly IMouse mouse;
 
-    private HashSet<Key> currentKeys = [];
+    private readonly HashSet<Key> currentKeys = [];
     private HashSet<Key> lastKeys = [];
 
-    private HashSet<MouseButton> currentMouseButtons = [];
+    private readonly HashSet<MouseButton> currentMouseButtons = [];
     private HashSet<MouseButton> lastMouseButtons = [];
 
     private Vector2 mousePosition;
@@ -38,12 +38,10 @@ public class InputManager
         scrollDelta = 0;
     }
 
-    // Keyboard API
     public bool IsKeyDown(Key key) => currentKeys.Contains(key);
     public bool WasKeyPressed(Key key) => currentKeys.Contains(key) && !lastKeys.Contains(key);
     public bool WasKeyReleased(Key key) => !currentKeys.Contains(key) && lastKeys.Contains(key);
 
-    // Mouse API
     public bool IsMouseButtonDown(MouseButton button) => currentMouseButtons.Contains(button);
     public bool WasMousePressed(MouseButton button) => currentMouseButtons.Contains(button) && !lastMouseButtons.Contains(button);
     public bool WasMouseReleased(MouseButton button) => !currentMouseButtons.Contains(button) && lastMouseButtons.Contains(button);

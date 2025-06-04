@@ -1,0 +1,13 @@
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/Hectix_Window.csproj.AssemblyReference.cache
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/Hectix_Window.GeneratedMSBuildEditorConfig.editorconfig
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/Hectix_Window.AssemblyInfoInputs.cache
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/Hectix_Window.AssemblyInfo.cs
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/Hectix_Window.csproj.CoreCompileInputs.cache
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/Hectix_Window.sourcelink.json
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/bin/Debug/net9.0/Hectix_Window.deps.json
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/bin/Debug/net9.0/Hectix_Window.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/bin/Debug/net9.0/Hectix_Window.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/Hectix_Window.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/refint/Hectix_Window.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/Hectix_Window.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/ref/Hectix_Window.dll

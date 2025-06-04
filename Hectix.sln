@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hectix_ImGui", "Hectix_ImGu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hectix_Input", "Hectix_Input\Hectix_Input.csproj", "{988EFA49-8533-408F-90EE-3A2FF123A61D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hectix_Window", "Hectix_Window\Hectix_Window.csproj", "{0B9935D7-C7D1-42ED-954C-BFCD18F2F590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hectix_Math", "Hectix_Math\Hectix_Math.csproj", "{1FE21A05-2297-4B59-A6C1-1896236B4AA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{988EFA49-8533-408F-90EE-3A2FF123A61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{988EFA49-8533-408F-90EE-3A2FF123A61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{988EFA49-8533-408F-90EE-3A2FF123A61D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B9935D7-C7D1-42ED-954C-BFCD18F2F590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9935D7-C7D1-42ED-954C-BFCD18F2F590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9935D7-C7D1-42ED-954C-BFCD18F2F590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9935D7-C7D1-42ED-954C-BFCD18F2F590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE21A05-2297-4B59-A6C1-1896236B4AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE21A05-2297-4B59-A6C1-1896236B4AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE21A05-2297-4B59-A6C1-1896236B4AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE21A05-2297-4B59-A6C1-1896236B4AA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

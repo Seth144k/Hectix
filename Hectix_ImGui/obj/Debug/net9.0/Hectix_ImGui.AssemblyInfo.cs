@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hectix_ImGui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ed7bc88709f17a8686ca72a025b7040f9b19704")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32d801277ea520e16927e77d2a3c621541dcc2de")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hectix_ImGui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hectix_ImGui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

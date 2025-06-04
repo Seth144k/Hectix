@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../Hectix_ImGui/Hectix_ImGui.csproj" />
+    <ProjectReference Include="../Hectix_Window/Hectix_Window.csproj" />
     <ProjectReference Include="..\Hectix_Engine\Hectix_Engine.csproj" />
   </ItemGroup>
 
