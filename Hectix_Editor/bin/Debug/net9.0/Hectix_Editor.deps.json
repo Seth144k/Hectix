@@ -250,17 +250,17 @@
           "runtimes/win-arm64/native/glfw3.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "3.4.0.0"
           },
           "runtimes/win-x64/native/glfw3.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "3.4.0.0"
           },
           "runtimes/win-x86/native/glfw3.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "3.4.0.0"
           }
         }
       },
@@ -272,7 +272,7 @@
         },
         "runtime": {
           "Hectix_Engine.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -283,7 +283,7 @@
         },
         "runtime": {
           "Hectix_ImGui.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -294,7 +294,7 @@
         },
         "runtime": {
           "Hectix_Input.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -305,7 +305,7 @@
         },
         "runtime": {
           "Hectix_Renderer.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

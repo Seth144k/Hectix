@@ -9,8 +9,10 @@
     ".NETCoreApp,Version=v9.0/win-x64": {
       "Hectix_App/1.0.0": {
         "dependencies": {
+          "Hectix_Editor": "1.0.0",
           "Hectix_Engine": "1.0.0",
           "Microsoft.NET.ILLink.Tasks": "9.0.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "9.0.5"
         },
         "runtime": {
@@ -698,48 +700,66 @@
         },
         "native": {
           "Microsoft.DiaSymReader.Native.amd64.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "14.42.34436.0"
           },
           "System.IO.Compression.Native.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "clretwrc.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "clrgc.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "clrgcexp.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "clrjit.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "coreclr.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "createdump.exe": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "hostfxr.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "hostpolicy.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "mscordaccore.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "mscordaccore_amd64_amd64_9.0.525.21509.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "mscordbi.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "mscorrc.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.525.21509"
           },
           "msquic.dll": {
+            "fileVersion": "2.4.8.0"
+          }
+        }
+      },
+      "ImGui.NET/1.90.8.1": {
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/net6.0/ImGui.NET.dll": {
+            "assemblyVersion": "1.90.8.1",
+            "fileVersion": "1.90.8.1"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/cimgui.dll": {
             "fileVersion": "0.0.0.0"
           }
         }
@@ -773,7 +793,7 @@
           "Microsoft.Extensions.DependencyModel": "8.0.0",
           "System.Memory": "4.5.5",
           "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
         },
         "runtime": {
           "lib/net6.0/Silk.NET.Core.dll": {
@@ -794,6 +814,46 @@
           }
         }
       },
+      "Silk.NET.Input/2.22.0": {
+        "dependencies": {
+          "Silk.NET.Input.Common": "2.22.0",
+          "Silk.NET.Input.Glfw": "2.22.0"
+        }
+      },
+      "Silk.NET.Input.Common/2.22.0": {
+        "dependencies": {
+          "Silk.NET.Windowing.Common": "2.22.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Input.Common.dll": {
+            "assemblyVersion": "2.22.0.0",
+            "fileVersion": "2.22.0.0"
+          }
+        }
+      },
+      "Silk.NET.Input.Extensions/2.22.0": {
+        "dependencies": {
+          "Silk.NET.Input.Common": "2.22.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Input.Extensions.dll": {
+            "assemblyVersion": "2.22.0.0",
+            "fileVersion": "2.22.0.0"
+          }
+        }
+      },
+      "Silk.NET.Input.Glfw/2.22.0": {
+        "dependencies": {
+          "Silk.NET.Input.Common": "2.22.0",
+          "Silk.NET.Windowing.Glfw": "2.22.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Input.Glfw.dll": {
+            "assemblyVersion": "2.22.0.0",
+            "fileVersion": "2.22.0.0"
+          }
+        }
+      },
       "Silk.NET.Maths/2.22.0": {
         "runtime": {
           "lib/net5.0/Silk.NET.Maths.dll": {
@@ -809,6 +869,21 @@
         },
         "runtime": {
           "lib/net5.0/Silk.NET.OpenGL.dll": {
+            "assemblyVersion": "2.22.0.0",
+            "fileVersion": "2.22.0.0"
+          }
+        }
+      },
+      "Silk.NET.OpenGL.Extensions.ImGui/2.22.0": {
+        "dependencies": {
+          "ImGui.NET": "1.90.8.1",
+          "Silk.NET.Input.Common": "2.22.0",
+          "Silk.NET.Input.Extensions": "2.22.0",
+          "Silk.NET.OpenGL": "2.22.0",
+          "Silk.NET.Windowing.Common": "2.22.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.OpenGL.Extensions.ImGui.dll": {
             "assemblyVersion": "2.22.0.0",
             "fileVersion": "2.22.0.0"
           }
@@ -844,9 +919,10 @@
           }
         }
       },
+      "System.Buffers/4.4.0": {},
       "System.Memory/4.5.5": {},
       "System.Numerics.Vectors/4.5.0": {},
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "System.Runtime.CompilerServices.Unsafe/6.1.2": {},
       "System.Text.Encodings.Web/8.0.0": {},
       "System.Text.Json/8.0.0": {
         "dependencies": {
@@ -856,18 +932,55 @@
       "Ultz.Native.GLFW/3.4.0": {
         "native": {
           "runtimes/win-x64/native/glfw3.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "3.4.0.0"
+          }
+        }
+      },
+      "Hectix_Editor/1.0.0": {
+        "dependencies": {
+          "Hectix_Engine": "1.0.0",
+          "Hectix_ImGui": "1.0.0",
+          "Silk.NET.OpenGL.Extensions.ImGui": "2.22.0"
+        },
+        "runtime": {
+          "Hectix_Editor.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
       "Hectix_Engine/1.0.0": {
         "dependencies": {
+          "Hectix_Input": "1.0.0",
           "Hectix_Renderer": "1.0.0",
-          "Silk.NET.Windowing": "2.22.0"
+          "Silk.NET.Windowing": "2.22.0",
+          "Silk.NET.Windowing.Glfw": "2.22.0"
         },
         "runtime": {
           "Hectix_Engine.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Hectix_ImGui/1.0.0": {
+        "dependencies": {
+          "Silk.NET.OpenGL.Extensions.ImGui": "2.22.0"
+        },
+        "runtime": {
+          "Hectix_ImGui.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Hectix_Input/1.0.0": {
+        "dependencies": {
+          "Silk.NET.Input": "2.22.0"
+        },
+        "runtime": {
+          "Hectix_Input.dll": {
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -878,7 +991,7 @@
         },
         "runtime": {
           "Hectix_Renderer.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -895,6 +1008,13 @@
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
+    },
+    "ImGui.NET/1.90.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O/Z4akFQhywpLQ+SyPC3nzfZcGb0vPYmVVR21hRQxkaQNbVKbHzDWc2t9IoSv/nP2/ly6BXNNz7UK9ngbsgyLg==",
+      "path": "imgui.net/1.90.8.1",
+      "hashPath": "imgui.net.1.90.8.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
@@ -920,7 +1040,7 @@
     "Microsoft.NET.ILLink.Tasks/9.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ciLi9UDEuFUmIcCKgZ8FZRLhYLYcEnCBYaIGMpruEBKBT/M/W1N08HfUMFKkznHK+TwoOR0zDWWJdesp66HsRg==",
+      "sha512": "sha512-4L7wbb3Y4BJgIeSnmAf/C6S/qCs9rT1b0dX72uj3qo0qvUH7D0U1tU5ZlC7A3Wb8E/dXK4caOi4JkdLTVJaXhw==",
       "path": "microsoft.net.illink.tasks/9.0.5",
       "hashPath": "microsoft.net.illink.tasks.9.0.5.nupkg.sha512"
     },
@@ -938,6 +1058,34 @@
       "path": "silk.net.glfw/2.22.0",
       "hashPath": "silk.net.glfw.2.22.0.nupkg.sha512"
     },
+    "Silk.NET.Input/2.22.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1gqbKHrKpBv2Vk983kVpMqXL4Uj36NaUIQ2YbQosFVa3pXJE8UMGiWqKtaeoMqnzItusZ1WYgDHKge37EvNm/w==",
+      "path": "silk.net.input/2.22.0",
+      "hashPath": "silk.net.input.2.22.0.nupkg.sha512"
+    },
+    "Silk.NET.Input.Common/2.22.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DZy30akJABBmTnn8OICik0TFEuXrkd7YCQvoq+oh50eJzXt8JgEYYa+sJYBib/Phs5WULZg/QR7fM8Gi1G3tXg==",
+      "path": "silk.net.input.common/2.22.0",
+      "hashPath": "silk.net.input.common.2.22.0.nupkg.sha512"
+    },
+    "Silk.NET.Input.Extensions/2.22.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SP3uum6DaC/4lgC0BTAVaVnn0Il8kBBUn2kzrRNxCpdZ7kvXnXgDzblh1b3QIkhQvTPDtkMHdqNlxjfDc6WRxQ==",
+      "path": "silk.net.input.extensions/2.22.0",
+      "hashPath": "silk.net.input.extensions.2.22.0.nupkg.sha512"
+    },
+    "Silk.NET.Input.Glfw/2.22.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LZPZT1e/RxnjKfkqlp2Wp8KJFP1Av/ErTCZ00EzZpFR1lhUSBgSmgJwXg6XlWoEJHyeJcsXV688zjoEe6YW0BA==",
+      "path": "silk.net.input.glfw/2.22.0",
+      "hashPath": "silk.net.input.glfw.2.22.0.nupkg.sha512"
+    },
     "Silk.NET.Maths/2.22.0": {
       "type": "package",
       "serviceable": true,
@@ -951,6 +1099,13 @@
       "sha512": "sha512-AmbtflPvaGWw7fHEHrcFTd54OTAj0bemzx4WV2ELJdW2NBPSvtyz31nhyuBVTml20+NtW4Z3yhDGUpM6uouVDQ==",
       "path": "silk.net.opengl/2.22.0",
       "hashPath": "silk.net.opengl.2.22.0.nupkg.sha512"
+    },
+    "Silk.NET.OpenGL.Extensions.ImGui/2.22.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZHne8za0yoQm1/ygDBUzyJI+8y7Y6B8S34OT7GINH+ePY8cK3T3OJFs7Zh7g1/fuXIapHKxC+6sg7KkykRR57g==",
+      "path": "silk.net.opengl.extensions.imgui/2.22.0",
+      "hashPath": "silk.net.opengl.extensions.imgui.2.22.0.nupkg.sha512"
     },
     "Silk.NET.Windowing/2.22.0": {
       "type": "package",
@@ -973,6 +1128,13 @@
       "path": "silk.net.windowing.glfw/2.22.0",
       "hashPath": "silk.net.windowing.glfw.2.22.0.nupkg.sha512"
     },
+    "System.Buffers/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "path": "system.buffers/4.4.0",
+      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
+    },
     "System.Memory/4.5.5": {
       "type": "package",
       "serviceable": true,
@@ -987,12 +1149,12 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+    "System.Runtime.CompilerServices.Unsafe/6.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
-      "path": "system.runtime.compilerservices.unsafe/6.0.0",
-      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+      "sha512": "sha512-2hBr6zdbIBTDE3EhK7NSVNdX58uTK6iHW/P/Axmm9sl1xoGSLqDvMtpecn226TNwHByFokYwJmt/aQQNlO5CRw==",
+      "path": "system.runtime.compilerservices.unsafe/6.1.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512"
     },
     "System.Text.Encodings.Web/8.0.0": {
       "type": "package",
@@ -1015,7 +1177,22 @@
       "path": "ultz.native.glfw/3.4.0",
       "hashPath": "ultz.native.glfw.3.4.0.nupkg.sha512"
     },
+    "Hectix_Editor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Hectix_Engine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hectix_ImGui/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hectix_Input/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

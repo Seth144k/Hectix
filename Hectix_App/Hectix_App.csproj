@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="../Hectix_Editor/Hectix_Editor.csproj" />
     <ProjectReference Include="../Hectix_Engine/Hectix_Engine.csproj" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
   </ItemGroup>
 
 </Project>

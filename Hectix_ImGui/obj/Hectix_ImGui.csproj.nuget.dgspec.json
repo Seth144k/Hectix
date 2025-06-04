@@ -1,26 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj": {}
+    "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_ImGui\\Hectix_ImGui.csproj": {}
   },
   "projects": {
-    "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj": {
+    "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_ImGui\\Hectix_ImGui.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj",
+        "projectUniqueName": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_ImGui\\Hectix_ImGui.csproj",
         "projectName": "Hectix_ImGui",
-        "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj",
-        "packagesPath": "/home/blehcat/.nuget/packages/",
-        "outputPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/obj/",
+        "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_ImGui\\Hectix_ImGui.csproj",
+        "packagesPath": "C:\\Users\\ramsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_ImGui\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/blehcat/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ramsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib64/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,12 +42,18 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )",
+              "autoReferenced": true
+            },
             "Silk.NET.OpenGL.Extensions.ImGui": {
               "target": "Package",
               "version": "[2.22.0, )"
@@ -61,12 +70,31 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.106/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

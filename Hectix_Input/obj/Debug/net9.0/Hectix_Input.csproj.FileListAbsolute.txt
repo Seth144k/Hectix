@@ -10,3 +10,16 @@
 /home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/refint/Hectix_Input.dll
 /home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/Hectix_Input.pdb
 /home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/Debug/net9.0/ref/Hectix_Input.dll
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\bin\Debug\net9.0\Hectix_Input.deps.json
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\bin\Debug\net9.0\Hectix_Input.dll
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\bin\Debug\net9.0\Hectix_Input.pdb
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\obj\Debug\net9.0\Hectix_Input.csproj.AssemblyReference.cache
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\obj\Debug\net9.0\Hectix_Input.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\obj\Debug\net9.0\Hectix_Input.AssemblyInfoInputs.cache
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\obj\Debug\net9.0\Hectix_Input.AssemblyInfo.cs
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\obj\Debug\net9.0\Hectix_Input.csproj.CoreCompileInputs.cache
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\obj\Debug\net9.0\Hectix_Input.sourcelink.json
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\obj\Debug\net9.0\Hectix_Input.dll
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\obj\Debug\net9.0\refint\Hectix_Input.dll
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\obj\Debug\net9.0\Hectix_Input.pdb
+C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_Input\obj\Debug\net9.0\ref\Hectix_Input.dll

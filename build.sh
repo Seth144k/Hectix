@@ -28,4 +28,5 @@ fi
 
 cd Hectix_App || exit 1
 # publishes to Hectix_App/bin/Release/net9.0/publish
+dotnet restore
 dotnet publish -c Release -r $TARGET --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true

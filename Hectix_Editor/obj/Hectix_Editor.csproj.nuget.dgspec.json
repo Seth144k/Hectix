@@ -1,37 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Editor/Hectix_Editor.csproj": {}
+    "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Editor\\Hectix_Editor.csproj": {}
   },
   "projects": {
-    "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Editor/Hectix_Editor.csproj": {
+    "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Editor\\Hectix_Editor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Editor/Hectix_Editor.csproj",
+        "projectUniqueName": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Editor\\Hectix_Editor.csproj",
         "projectName": "Hectix_Editor",
-        "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Editor/Hectix_Editor.csproj",
-        "packagesPath": "/home/blehcat/.nuget/packages/",
-        "outputPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Editor/obj/",
+        "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Editor\\Hectix_Editor.csproj",
+        "packagesPath": "C:\\Users\\ramsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Editor\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/blehcat/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ramsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib64/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Engine/Hectix_Engine.csproj": {
-                "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Engine/Hectix_Engine.csproj"
+              "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Engine\\Hectix_Engine.csproj": {
+                "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Engine\\Hectix_Engine.csproj"
               },
-              "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj": {
-                "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj"
+              "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_ImGui\\Hectix_ImGui.csproj": {
+                "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_ImGui\\Hectix_ImGui.csproj"
               }
             }
           }
@@ -46,12 +49,18 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )",
+              "autoReferenced": true
+            },
             "Silk.NET.OpenGL.Extensions.ImGui": {
               "target": "Package",
               "version": "[2.22.0, )"
@@ -68,43 +77,65 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.106/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     },
-    "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Engine/Hectix_Engine.csproj": {
+    "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Engine\\Hectix_Engine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Engine/Hectix_Engine.csproj",
+        "projectUniqueName": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Engine\\Hectix_Engine.csproj",
         "projectName": "Hectix_Engine",
-        "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Engine/Hectix_Engine.csproj",
-        "packagesPath": "/home/blehcat/.nuget/packages/",
-        "outputPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Engine/obj/",
+        "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Engine\\Hectix_Engine.csproj",
+        "packagesPath": "C:\\Users\\ramsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Engine\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/blehcat/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ramsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib64/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/Hectix_Input.csproj": {
-                "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/Hectix_Input.csproj"
+              "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Input\\Hectix_Input.csproj": {
+                "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Input\\Hectix_Input.csproj"
               },
-              "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Renderer/Hectix_Renderer.csproj": {
-                "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Renderer/Hectix_Renderer.csproj"
+              "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Renderer\\Hectix_Renderer.csproj": {
+                "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Renderer\\Hectix_Renderer.csproj"
               }
             }
           }
@@ -119,15 +150,25 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )",
+              "autoReferenced": true
+            },
             "Silk.NET.Windowing": {
               "target": "Package",
               "version": "[2.22.0, )"
+            },
+            "Silk.NET.Windowing.Glfw": {
+              "target": "Package",
+              "version": "[2.22.0, )"
             }
           },
           "imports": [
@@ -141,32 +182,54 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.106/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     },
-    "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj": {
+    "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_ImGui\\Hectix_ImGui.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj",
+        "projectUniqueName": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_ImGui\\Hectix_ImGui.csproj",
         "projectName": "Hectix_ImGui",
-        "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj",
-        "packagesPath": "/home/blehcat/.nuget/packages/",
-        "outputPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/obj/",
+        "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_ImGui\\Hectix_ImGui.csproj",
+        "packagesPath": "C:\\Users\\ramsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_ImGui\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/blehcat/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ramsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib64/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -185,12 +248,18 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )",
+              "autoReferenced": true
+            },
             "Silk.NET.OpenGL.Extensions.ImGui": {
               "target": "Package",
               "version": "[2.22.0, )"
@@ -207,32 +276,54 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.106/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     },
-    "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/Hectix_Input.csproj": {
+    "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Input\\Hectix_Input.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/Hectix_Input.csproj",
+        "projectUniqueName": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Input\\Hectix_Input.csproj",
         "projectName": "Hectix_Input",
-        "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/Hectix_Input.csproj",
-        "packagesPath": "/home/blehcat/.nuget/packages/",
-        "outputPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/obj/",
+        "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Input\\Hectix_Input.csproj",
+        "packagesPath": "C:\\Users\\ramsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Input\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/blehcat/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ramsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib64/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -251,12 +342,18 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )",
+              "autoReferenced": true
+            },
             "Silk.NET.Input": {
               "target": "Package",
               "version": "[2.22.0, )"
@@ -273,32 +370,54 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.106/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     },
-    "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Renderer/Hectix_Renderer.csproj": {
+    "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Renderer\\Hectix_Renderer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Renderer/Hectix_Renderer.csproj",
+        "projectUniqueName": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Renderer\\Hectix_Renderer.csproj",
         "projectName": "Hectix_Renderer",
-        "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Renderer/Hectix_Renderer.csproj",
-        "packagesPath": "/home/blehcat/.nuget/packages/",
-        "outputPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Renderer/obj/",
+        "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Renderer\\Hectix_Renderer.csproj",
+        "packagesPath": "C:\\Users\\ramsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Renderer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/blehcat/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ramsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib64/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -317,12 +436,18 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )",
+              "autoReferenced": true
+            },
             "Silk.NET.OpenGL": {
               "target": "Package",
               "version": "[2.22.0, )"
@@ -339,12 +464,31 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[9.0.5, 9.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.106/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

@@ -84,6 +84,12 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.NET.ILLink.Tasks/9.0.5": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
       "Silk.NET.Core/2.22.0": {
         "type": "package",
         "dependencies": {
@@ -296,20 +302,16 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "System.Runtime.CompilerServices.Unsafe/6.1.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
+          "lib/net7.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
+          "lib/net7.0/_._": {}
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Text.Encodings.Web/8.0.0": {
@@ -417,7 +419,420 @@
         "dependencies": {
           "Hectix_Input": "1.0.0",
           "Hectix_Renderer": "1.0.0",
-          "Silk.NET.Windowing": "2.22.0"
+          "Silk.NET.Windowing": "2.22.0",
+          "Silk.NET.Windowing.Glfw": "2.22.0"
+        },
+        "compile": {
+          "bin/placeholder/Hectix_Engine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hectix_Engine.dll": {}
+        }
+      },
+      "Hectix_ImGui/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Silk.NET.OpenGL.Extensions.ImGui": "2.22.0"
+        },
+        "compile": {
+          "bin/placeholder/Hectix_ImGui.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hectix_ImGui.dll": {}
+        }
+      },
+      "Hectix_Input/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Silk.NET.Input": "2.22.0"
+        },
+        "compile": {
+          "bin/placeholder/Hectix_Input.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hectix_Input.dll": {}
+        }
+      },
+      "Hectix_Renderer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Silk.NET.OpenGL": "2.22.0"
+        },
+        "compile": {
+          "bin/placeholder/Hectix_Renderer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hectix_Renderer.dll": {}
+        }
+      }
+    },
+    "net9.0/win-x64": {
+      "ImGui.NET/1.90.8.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+        },
+        "compile": {
+          "lib/net6.0/ImGui.NET.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ImGui.NET.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/cimgui.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Microsoft.DotNet.PlatformAbstractions/3.1.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "8.0.0",
+          "System.Text.Json": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/9.0.5": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Silk.NET.Core/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.DotNet.PlatformAbstractions": "3.1.6",
+          "Microsoft.Extensions.DependencyModel": "8.0.0",
+          "System.Memory": "4.5.5",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Silk.NET.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Silk.NET.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Silk.NET.GLFW/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.Core": "2.22.0",
+          "Ultz.Native.GLFW": "3.4.0"
+        },
+        "compile": {
+          "lib/net5.0/Silk.NET.GLFW.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.GLFW.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Silk.NET.Input/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.Input.Common": "2.22.0",
+          "Silk.NET.Input.Glfw": "2.22.0"
+        }
+      },
+      "Silk.NET.Input.Common/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.Windowing.Common": "2.22.0"
+        },
+        "compile": {
+          "lib/net5.0/Silk.NET.Input.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Input.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Silk.NET.Input.Extensions/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.Input.Common": "2.22.0"
+        },
+        "compile": {
+          "lib/net5.0/Silk.NET.Input.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Input.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Silk.NET.Input.Glfw/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.Input.Common": "2.22.0",
+          "Silk.NET.Windowing.Glfw": "2.22.0"
+        },
+        "compile": {
+          "lib/net5.0/Silk.NET.Input.Glfw.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Input.Glfw.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Silk.NET.Maths/2.22.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Silk.NET.Maths.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Maths.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Silk.NET.OpenGL/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.Core": "2.22.0",
+          "Silk.NET.Maths": "2.22.0"
+        },
+        "compile": {
+          "lib/net5.0/Silk.NET.OpenGL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.OpenGL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Silk.NET.OpenGL.Extensions.ImGui/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "ImGui.NET": "1.90.8.1",
+          "Silk.NET.Input.Common": "2.22.0",
+          "Silk.NET.Input.Extensions": "2.22.0",
+          "Silk.NET.OpenGL": "2.22.0",
+          "Silk.NET.Windowing.Common": "2.22.0"
+        },
+        "compile": {
+          "lib/net5.0/Silk.NET.OpenGL.Extensions.ImGui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.OpenGL.Extensions.ImGui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Silk.NET.Windowing/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.Windowing.Common": "2.22.0",
+          "Silk.NET.Windowing.Glfw": "2.22.0"
+        }
+      },
+      "Silk.NET.Windowing.Common/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.Core": "2.22.0",
+          "Silk.NET.Maths": "2.22.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Silk.NET.Windowing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Silk.NET.Windowing.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Silk.NET.Windowing.Glfw/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.GLFW": "2.22.0",
+          "Silk.NET.Windowing.Common": "2.22.0"
+        },
+        "compile": {
+          "lib/net5.0/Silk.NET.Windowing.Glfw.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Windowing.Glfw.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net7.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Text.Encodings.Web/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Text.Json/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/System.Text.Json.targets": {}
+        }
+      },
+      "Ultz.Native.GLFW/3.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/glfw3.dll": {}
+        }
+      },
+      "Hectix_Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Hectix_Engine": "1.0.0",
+          "Hectix_ImGui": "1.0.0",
+          "Silk.NET.OpenGL.Extensions.ImGui": "2.22.0"
+        },
+        "compile": {
+          "bin/placeholder/Hectix_Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hectix_Editor.dll": {}
+        }
+      },
+      "Hectix_Engine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Hectix_Input": "1.0.0",
+          "Hectix_Renderer": "1.0.0",
+          "Silk.NET.Windowing": "2.22.0",
+          "Silk.NET.Windowing.Glfw": "2.22.0"
         },
         "compile": {
           "bin/placeholder/Hectix_Engine.dll": {}
@@ -605,6 +1020,57 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.xml",
         "microsoft.extensions.dependencymodel.8.0.0.nupkg.sha512",
         "microsoft.extensions.dependencymodel.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.NET.ILLink.Tasks/9.0.5": {
+      "sha512": "4L7wbb3Y4BJgIeSnmAf/C6S/qCs9rT1b0dX72uj3qo0qvUH7D0U1tU5ZlC7A3Wb8E/dXK4caOi4JkdLTVJaXhw==",
+      "type": "package",
+      "path": "microsoft.net.illink.tasks/9.0.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "Sdk/Sdk.props",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
+        "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
+        "build/Microsoft.NET.ILLink.Analyzers.props",
+        "build/Microsoft.NET.ILLink.Tasks.props",
+        "build/Microsoft.NET.ILLink.targets",
+        "microsoft.net.illink.tasks.9.0.5.nupkg.sha512",
+        "microsoft.net.illink.tasks.nuspec",
+        "tools/net472/ILLink.Tasks.dll",
+        "tools/net472/ILLink.Tasks.dll.config",
+        "tools/net472/Mono.Cecil.Mdb.dll",
+        "tools/net472/Mono.Cecil.Pdb.dll",
+        "tools/net472/Mono.Cecil.Rocks.dll",
+        "tools/net472/Mono.Cecil.dll",
+        "tools/net472/Sdk/Sdk.props",
+        "tools/net472/System.Buffers.dll",
+        "tools/net472/System.Collections.Immutable.dll",
+        "tools/net472/System.Memory.dll",
+        "tools/net472/System.Numerics.Vectors.dll",
+        "tools/net472/System.Reflection.Metadata.dll",
+        "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net472/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net472/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net472/build/Microsoft.NET.ILLink.targets",
+        "tools/net9.0/ILLink.Tasks.deps.json",
+        "tools/net9.0/ILLink.Tasks.dll",
+        "tools/net9.0/Mono.Cecil.Mdb.dll",
+        "tools/net9.0/Mono.Cecil.Pdb.dll",
+        "tools/net9.0/Mono.Cecil.Rocks.dll",
+        "tools/net9.0/Mono.Cecil.dll",
+        "tools/net9.0/Sdk/Sdk.props",
+        "tools/net9.0/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net9.0/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net9.0/build/Microsoft.NET.ILLink.targets",
+        "tools/net9.0/illink.deps.json",
+        "tools/net9.0/illink.dll",
+        "tools/net9.0/illink.runtimeconfig.json",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -941,29 +1407,28 @@
         "version.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
-      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+    "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+      "sha512": "2hBr6zdbIBTDE3EhK7NSVNdX58uTK6iHW/P/Axmm9sl1xoGSLqDvMtpecn226TNwHByFokYwJmt/aQQNlO5CRw==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "path": "system.runtime.compilerservices.unsafe/6.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
+        "PACKAGE.md",
+        "buildTransitive/net461/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net462/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net462/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net7.0/_._",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-        "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt"
+        "system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec"
       ]
     },
     "System.Text.Encodings.Web/8.0.0": {
@@ -1127,40 +1592,46 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Hectix_Editor >= 1.0.0",
-      "Hectix_Engine >= 1.0.0"
+      "Hectix_Engine >= 1.0.0",
+      "Microsoft.NET.ILLink.Tasks >= 9.0.5",
+      "System.Runtime.CompilerServices.Unsafe >= 6.1.2"
     ]
   },
   "packageFolders": {
-    "/home/blehcat/.nuget/packages/": {}
+    "C:\\Users\\ramsa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/Hectix_App.csproj",
+      "projectUniqueName": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_App\\Hectix_App.csproj",
       "projectName": "Hectix_App",
-      "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/Hectix_App.csproj",
-      "packagesPath": "/home/blehcat/.nuget/packages/",
-      "outputPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/obj/",
+      "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_App\\Hectix_App.csproj",
+      "packagesPath": "C:\\Users\\ramsa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_App\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/blehcat/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ramsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "/usr/lib64/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Editor/Hectix_Editor.csproj": {
-              "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Editor/Hectix_Editor.csproj"
+            "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Editor\\Hectix_Editor.csproj": {
+              "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Editor\\Hectix_Editor.csproj"
             },
-            "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Engine/Hectix_Engine.csproj": {
-              "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Engine/Hectix_Engine.csproj"
+            "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Engine\\Hectix_Engine.csproj": {
+              "projectPath": "C:\\Users\\ramsa\\OneDrive\\Documents\\code stuff\\C#\\Hectix\\Hectix_Engine\\Hectix_Engine.csproj"
             }
           }
         }
@@ -1175,11 +1646,23 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
+        "dependencies": {
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[9.0.5, )",
+            "autoReferenced": true
+          },
+          "System.Runtime.CompilerServices.Unsafe": {
+            "target": "Package",
+            "version": "[6.1.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -1191,12 +1674,31 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[9.0.5, 9.0.5]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[9.0.5, 9.0.5]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "version": "[9.0.5, 9.0.5]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.106/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
       }
     }
   }
