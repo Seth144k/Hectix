@@ -11,3 +11,10 @@
 /home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/refint/Hectix_Window.dll
 /home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/Hectix_Window.pdb
 /home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/ref/Hectix_Window.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/bin/Debug/net9.0/Hectix_ImGui.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/bin/Debug/net9.0/Hectix_Input.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/bin/Debug/net9.0/Hectix_Renderer.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/bin/Debug/net9.0/Hectix_ImGui.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/bin/Debug/net9.0/Hectix_Input.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/bin/Debug/net9.0/Hectix_Renderer.pdb
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/obj/Debug/net9.0/Hectix_W.D2CC713E.Up2Date

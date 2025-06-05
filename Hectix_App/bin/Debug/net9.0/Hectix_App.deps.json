@@ -328,6 +328,9 @@
       },
       "Hectix_Window/1.0.0": {
         "dependencies": {
+          "Hectix_ImGui": "1.0.0",
+          "Hectix_Input": "1.0.0",
+          "Hectix_Renderer": "1.0.0",
           "Silk.NET.Input": "2.22.0",
           "Silk.NET.OpenGL": "2.22.0",
           "Silk.NET.Windowing": "2.22.0"

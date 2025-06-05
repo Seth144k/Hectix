@@ -2,6 +2,46 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "ImGui.NET/1.90.8.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+        },
+        "compile": {
+          "lib/net6.0/ImGui.NET.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ImGui.NET.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libcimgui.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/libcimgui.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-arm64/native/cimgui.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/cimgui.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/cimgui.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -105,6 +145,22 @@
           }
         }
       },
+      "Silk.NET.Input.Extensions/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.Input.Common": "2.22.0"
+        },
+        "compile": {
+          "lib/net5.0/Silk.NET.Input.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Input.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Silk.NET.Input.Glfw/2.22.0": {
         "type": "package",
         "dependencies": {
@@ -152,6 +208,26 @@
           }
         }
       },
+      "Silk.NET.OpenGL.Extensions.ImGui/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "ImGui.NET": "1.90.8.1",
+          "Silk.NET.Input.Common": "2.22.0",
+          "Silk.NET.Input.Extensions": "2.22.0",
+          "Silk.NET.OpenGL": "2.22.0",
+          "Silk.NET.Windowing.Common": "2.22.0"
+        },
+        "compile": {
+          "lib/net5.0/Silk.NET.OpenGL.Extensions.ImGui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.OpenGL.Extensions.ImGui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Silk.NET.Windowing/2.22.0": {
         "type": "package",
         "dependencies": {
@@ -191,6 +267,15 @@
           "lib/net5.0/Silk.NET.Windowing.Glfw.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Memory/4.5.5": {
@@ -310,10 +395,70 @@
             "rid": "win-x86"
           }
         }
+      },
+      "Hectix_ImGui/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Silk.NET.OpenGL.Extensions.ImGui": "2.22.0"
+        },
+        "compile": {
+          "bin/placeholder/Hectix_ImGui.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hectix_ImGui.dll": {}
+        }
+      },
+      "Hectix_Input/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Silk.NET.Input": "2.22.0"
+        },
+        "compile": {
+          "bin/placeholder/Hectix_Input.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hectix_Input.dll": {}
+        }
+      },
+      "Hectix_Renderer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Silk.NET.OpenGL": "2.22.0"
+        },
+        "compile": {
+          "bin/placeholder/Hectix_Renderer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hectix_Renderer.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "ImGui.NET/1.90.8.1": {
+      "sha512": "O/Z4akFQhywpLQ+SyPC3nzfZcGb0vPYmVVR21hRQxkaQNbVKbHzDWc2t9IoSv/nP2/ly6BXNNz7UK9ngbsgyLg==",
+      "type": "package",
+      "path": "imgui.net/1.90.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net40/ImGui.NET.targets",
+        "imgui.net.1.90.8.1.nupkg.sha512",
+        "imgui.net.nuspec",
+        "lib/net6.0/ImGui.NET.dll",
+        "lib/net6.0/ImGui.NET.xml",
+        "lib/netstandard2.0/ImGui.NET.dll",
+        "lib/netstandard2.0/ImGui.NET.xml",
+        "runtimes/linux-x64/native/libcimgui.so",
+        "runtimes/osx/native/libcimgui.dylib",
+        "runtimes/win-arm64/native/cimgui.dll",
+        "runtimes/win-x64/native/cimgui.dll",
+        "runtimes/win-x86/native/cimgui.dll"
+      ]
+    },
     "Microsoft.CSharp/4.7.0": {
       "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
@@ -511,6 +656,27 @@
         "silkdotnet_v3.png"
       ]
     },
+    "Silk.NET.Input.Extensions/2.22.0": {
+      "sha512": "SP3uum6DaC/4lgC0BTAVaVnn0Il8kBBUn2kzrRNxCpdZ7kvXnXgDzblh1b3QIkhQvTPDtkMHdqNlxjfDc6WRxQ==",
+      "type": "package",
+      "path": "silk.net.input.extensions/2.22.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Silk.NET.Input.Extensions.dll",
+        "lib/net5.0/Silk.NET.Input.Extensions.xml",
+        "lib/netcoreapp3.1/Silk.NET.Input.Extensions.dll",
+        "lib/netcoreapp3.1/Silk.NET.Input.Extensions.xml",
+        "lib/netstandard2.0/Silk.NET.Input.Extensions.dll",
+        "lib/netstandard2.0/Silk.NET.Input.Extensions.xml",
+        "lib/netstandard2.1/Silk.NET.Input.Extensions.dll",
+        "lib/netstandard2.1/Silk.NET.Input.Extensions.xml",
+        "silk.net.input.extensions.2.22.0.nupkg.sha512",
+        "silk.net.input.extensions.nuspec",
+        "silkdotnet_v3.png"
+      ]
+    },
     "Silk.NET.Input.Glfw/2.22.0": {
       "sha512": "LZPZT1e/RxnjKfkqlp2Wp8KJFP1Av/ErTCZ00EzZpFR1lhUSBgSmgJwXg6XlWoEJHyeJcsXV688zjoEe6YW0BA==",
       "type": "package",
@@ -578,6 +744,27 @@
         "silkdotnet_v3.png"
       ]
     },
+    "Silk.NET.OpenGL.Extensions.ImGui/2.22.0": {
+      "sha512": "ZHne8za0yoQm1/ygDBUzyJI+8y7Y6B8S34OT7GINH+ePY8cK3T3OJFs7Zh7g1/fuXIapHKxC+6sg7KkykRR57g==",
+      "type": "package",
+      "path": "silk.net.opengl.extensions.imgui/2.22.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Silk.NET.OpenGL.Extensions.ImGui.dll",
+        "lib/net5.0/Silk.NET.OpenGL.Extensions.ImGui.xml",
+        "lib/netcoreapp3.1/Silk.NET.OpenGL.Extensions.ImGui.dll",
+        "lib/netcoreapp3.1/Silk.NET.OpenGL.Extensions.ImGui.xml",
+        "lib/netstandard2.0/Silk.NET.OpenGL.Extensions.ImGui.dll",
+        "lib/netstandard2.0/Silk.NET.OpenGL.Extensions.ImGui.xml",
+        "lib/netstandard2.1/Silk.NET.OpenGL.Extensions.ImGui.dll",
+        "lib/netstandard2.1/Silk.NET.OpenGL.Extensions.ImGui.xml",
+        "silk.net.opengl.extensions.imgui.2.22.0.nupkg.sha512",
+        "silk.net.opengl.extensions.imgui.nuspec",
+        "silkdotnet_v3.png"
+      ]
+    },
     "Silk.NET.Windowing/2.22.0": {
       "sha512": "yKGe/8REdm+T43LdtfUpFUx9eQARwx6wTmEoJ2bANVGQPCvWYC2Qi1+haT6n63dyNIX+iJWKg4++F4TFjg0/Fw==",
       "type": "package",
@@ -627,6 +814,31 @@
         "silk.net.windowing.glfw.2.22.0.nupkg.sha512",
         "silk.net.windowing.glfw.nuspec",
         "silkdotnet_v3.png"
+      ]
+    },
+    "System.Buffers/4.4.0": {
+      "sha512": "AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "type": "package",
+      "path": "system.buffers/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "system.buffers.4.4.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Memory/4.5.5": {
@@ -855,10 +1067,28 @@
         "ultz.native.glfw.3.4.0.nupkg.sha512",
         "ultz.native.glfw.nuspec"
       ]
+    },
+    "Hectix_ImGui/1.0.0": {
+      "type": "project",
+      "path": "../Hectix_ImGui/Hectix_ImGui.csproj",
+      "msbuildProject": "../Hectix_ImGui/Hectix_ImGui.csproj"
+    },
+    "Hectix_Input/1.0.0": {
+      "type": "project",
+      "path": "../Hectix_Input/Hectix_Input.csproj",
+      "msbuildProject": "../Hectix_Input/Hectix_Input.csproj"
+    },
+    "Hectix_Renderer/1.0.0": {
+      "type": "project",
+      "path": "../Hectix_Renderer/Hectix_Renderer.csproj",
+      "msbuildProject": "../Hectix_Renderer/Hectix_Renderer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Hectix_ImGui >= 1.0.0",
+      "Hectix_Input >= 1.0.0",
+      "Hectix_Renderer >= 1.0.0",
       "Silk.NET.Input >= 2.22.0",
       "Silk.NET.OpenGL >= 2.22.0",
       "Silk.NET.Windowing >= 2.22.0"
@@ -889,7 +1119,17 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj": {
+              "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj"
+            },
+            "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/Hectix_Input.csproj": {
+              "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/Hectix_Input.csproj"
+            },
+            "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Renderer/Hectix_Renderer.csproj": {
+              "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Renderer/Hectix_Renderer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

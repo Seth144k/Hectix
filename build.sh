@@ -16,11 +16,6 @@ elif [[ "$1" == "linux-arm64" ]]; then
 elif [[ "$1" == "linux-arm32" ]]; then
     TARGET="linux-arm"
 
-elif [[ "$1" == "mac64" ]]; then
-    TARGET="osx-x64"
-elif [[ "$1" == "mac-arm64" ]]; then
-    TARGET="osx-arm64"
-
 else
     echo "Incorrect Platform Specified"
     exit 1

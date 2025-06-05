@@ -85,6 +85,4 @@ public static class IMGUI
         => ImGui.ColorEdit3(label, ref col, flags);
     public static bool ColorEdit4(string label, ref System.Numerics.Vector4 col, ImGuiColorEditFlags flags = 0)
         => ImGui.ColorEdit4(label, ref col, flags);
-
-
 }

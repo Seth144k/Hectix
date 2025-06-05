@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hectix_Math")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32d801277ea520e16927e77d2a3c621541dcc2de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20320944717d8307fade8db4816431733d739154")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hectix_Math")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hectix_Math")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

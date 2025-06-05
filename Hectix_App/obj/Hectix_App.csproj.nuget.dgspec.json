@@ -453,7 +453,17 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj": {
+                "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_ImGui/Hectix_ImGui.csproj"
+              },
+              "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/Hectix_Input.csproj": {
+                "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Input/Hectix_Input.csproj"
+              },
+              "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Renderer/Hectix_Renderer.csproj": {
+                "projectPath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Renderer/Hectix_Renderer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

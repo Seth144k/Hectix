@@ -1,5 +1,5 @@
-using Hectix.Input;
 using Hectix.Renderer.OpenGL;
+using Hectix.ImGui.Backends.OpenGL;
 using Hectix.Window;
 
 namespace Hectix.Editor;
@@ -23,7 +23,6 @@ public class EditorApp
 
     private void OnLoad()
     {
-
         var gl = window.GetGL();
         renderer = new OpenGLRenderer(gl);
         renderer.Initialize();
@@ -44,6 +43,6 @@ public class EditorApp
 
     private void OnClosing()
     {
-        
+
     }
 }

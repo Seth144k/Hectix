@@ -1,0 +1,2 @@
+namespace Hectix.Window.GLFW;
+
