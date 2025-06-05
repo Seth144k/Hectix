@@ -1,21 +1,15 @@
-using Hectix.Engine.Core;
-using Hectix.ImGui.Backends;
 using Hectix.Input;
 using Hectix.Renderer.OpenGL;
 using Hectix.Window;
-using Silk.NET.OpenGL;
 
 namespace Hectix.Editor;
 
+using Hectix.Renderer;
+
 public class EditorApp
 {
-    public static SceneManager sceneManager = new();
     private readonly IHectixWindow window;
-    private ImGuiOpenGL? imGuiOpenGL;
-    private readonly MenuBar menuBar = new();
-    private InputManager? input;
-    private GL? gl;
-    private OpenGLRenderer? renderer;
+    private IHectixRenderer? renderer;
 
     public EditorApp(IHectixWindow window)
     {
@@ -25,40 +19,31 @@ public class EditorApp
         window.OnClosing += OnClosing;
     }
 
-    public void Run()
-    {
-        window.Run();
-    }
+    public void Run() => window.Run();
 
     private void OnLoad()
     {
-        //gl = new(((GL)window.GetContext()).GL);
-        //renderer = new(gl);
-        //renderer.Initialize();
-        input = new((Silk.NET.Input.IInputContext)window.GetInput());
 
-        imGuiOpenGL = new();
-        imGuiOpenGL.Initialize(
-            (Silk.NET.Core.Contexts.IGLContextSource)window.GetContext(),
-            (Silk.NET.Input.IInputContext)window.GetInput()
-        );
+        var gl = window.GetGL();
+        renderer = new OpenGLRenderer(gl);
+        renderer.Initialize();
+
+        Console.WriteLine("Editor Loaded!");
     }
 
     private void OnRender(float deltaTime)
     {
-        input!.Update();
-
         var size = window.Size;
-        //renderer?.SetViewPort(0, 0, (uint)size.X, (uint)size.Y);
-        renderer?.ClearColor(0, 0, 0, 1);
+        renderer!.SetViewPort(0, 0, (uint)size.Width, (uint)size.Height);
+        renderer.ClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 
-        imGuiOpenGL?.BeginFrame(deltaTime);
-        menuBar.Render();
-        imGuiOpenGL?.EndFrame();
+        renderer.BeginFrame(deltaTime);
+
+        renderer.EndFrame();
     }
 
     private void OnClosing()
     {
-        // Cleanup if needed
+        
     }
 }

@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[2.22.0, )"
             },
+            "Silk.NET.OpenGL": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            },
             "Silk.NET.Windowing": {
               "target": "Package",
               "version": "[2.22.0, )"

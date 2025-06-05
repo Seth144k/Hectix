@@ -1,7 +1,7 @@
 
 namespace Hectix.Window.GLFW;
 
-public class GlfwWindow : IHectixWindow
+public class GlfwWindow
 {
     public string Title { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 

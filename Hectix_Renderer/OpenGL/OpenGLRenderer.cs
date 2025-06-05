@@ -1,15 +1,21 @@
 using Silk.NET.OpenGL;
+using Hectix.Renderer;
 
 namespace Hectix.Renderer.OpenGL;
 
-public class OpenGLRenderer(GL gl)
+public class OpenGLRenderer : IHectixRenderer
 {
-    private readonly GL gl = gl;
+    private readonly GL gl;
+
+
+    public OpenGLRenderer(GL gl)
+    {
+        this.gl = gl;
+    }
 
     public void Initialize()
     {
         gl.Enable(GLEnum.Blend);
-        // enables alpha blending and transparancy
         gl.BlendFunc(GLEnum.SrcAlpha, GLEnum.OneMinusSrcAlpha);
     }
 
@@ -23,13 +29,10 @@ public class OpenGLRenderer(GL gl)
         gl.ClearColor(r, g, b, a);
         gl.Clear((uint)ClearBufferMask.ColorBufferBit);
     }
-    public void BeginFrame(float deltaTime)
-    {
-        
-    }
 
-    public void EndFrame()
-    {
-        
-    }
+    public void BeginFrame(float deltaTime) { }
+
+    public void EndFrame() { }
+
+    public GL GetGL() => gl!;
 }

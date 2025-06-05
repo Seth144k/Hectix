@@ -4,7 +4,7 @@ using Silk.NET.OpenGL;
 using Silk.NET.OpenGL.Extensions.ImGui;
 using Silk.NET.Windowing;
 
-namespace Hectix.ImGui.Backends;
+namespace Hectix.ImGui.Backends.OpenGL;
 
 public class ImGuiOpenGL
 {

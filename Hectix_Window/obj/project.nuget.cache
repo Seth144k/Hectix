@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/9NujQufwk8=",
+  "dgSpecHash": "YVrKNHLfhO0=",
   "success": true,
   "projectFilePath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/Hectix_Window.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "/home/blehcat/.nuget/packages/silk.net.input.common/2.22.0/silk.net.input.common.2.22.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/silk.net.input.glfw/2.22.0/silk.net.input.glfw.2.22.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/silk.net.maths/2.22.0/silk.net.maths.2.22.0.nupkg.sha512",
+    "/home/blehcat/.nuget/packages/silk.net.opengl/2.22.0/silk.net.opengl.2.22.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/silk.net.windowing/2.22.0/silk.net.windowing.2.22.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/silk.net.windowing.common/2.22.0/silk.net.windowing.common.2.22.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/silk.net.windowing.glfw/2.22.0/silk.net.windowing.glfw.2.22.0.nupkg.sha512",

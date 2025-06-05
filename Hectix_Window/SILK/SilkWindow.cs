@@ -1,6 +1,7 @@
 using Silk.NET.Maths;
 using Silk.NET.Windowing;
 using Silk.NET.Input;
+using Silk.NET.OpenGL;
 
 namespace Hectix.Window.SILK;
 
@@ -9,6 +10,7 @@ public class SilkWindow : IHectixWindow
     public event Action<float>? OnRender;
     public event Action? OnLoad;
     public event Action? OnClosing;
+    private GL? gl;
 
     public string Title { get; set; } = "Hectix Engine";
 
@@ -35,12 +37,14 @@ public class SilkWindow : IHectixWindow
     private void HandleLoad()
     {
         input = window!.CreateInput();
+        gl = GL.GetApi(window);
         OnLoad?.Invoke();
     }
 
     public Size Size => new(window!.Size.X, window!.Size.Y);
-    Size IHectixWindow.Size => throw new NotImplementedException();
+    Size IHectixWindow.Size => Size;
 
     public object GetContext() => window!;
     public object GetInput() => input!;
+    public GL GetGL() => gl!;
 }

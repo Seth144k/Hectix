@@ -1,3 +1,5 @@
+using Silk.NET.OpenGL;
+
 namespace Hectix.Window;
 
 public interface IHectixWindow
@@ -12,4 +14,5 @@ public interface IHectixWindow
 
     object GetContext();
     object GetInput();
+    GL GetGL();
 }
