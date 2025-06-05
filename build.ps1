@@ -1,5 +1,3 @@
-# build.ps1
-
 param (
     [string]$Platform
 )
