@@ -22,6 +22,7 @@ using Silk.NET.Maths;
 using Silk.NET.Windowing;
 using Silk.NET.Input;
 using Silk.NET.OpenGL;
+using Silk.NET.Core.Contexts;
 
 namespace Hectix.Window.SILK;
 
@@ -67,4 +68,5 @@ public class SilkWindow : IHectixWindow
     public object GetContext() => window!;
     public object GetInput() => input!;
     public GL GetGL() => gl!;
+    public IGLContextSource GetGLContextSource() => window!;
 }

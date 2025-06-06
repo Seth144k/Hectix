@@ -27,7 +27,7 @@ public class MenuBar
 {
     public void Render()
     {
-        IMGUI.BeginMainMenuBar();
+        /*IMGUI.BeginMainMenuBar();
         if (IMGUI.BeginMenu("Scene"))
         {
             if (IMGUI.MenuItem("New Scene"))
@@ -53,6 +53,6 @@ public class MenuBar
         {
 
         }
-        IMGUI.EndMainMenuBar();
+        IMGUI.EndMainMenuBar();*/
     }
 }

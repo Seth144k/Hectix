@@ -20,15 +20,19 @@
 
 using Hectix.Renderer.OpenGL;
 using Hectix.ImGui.Backends.OpenGL;
+using Silk.NET.Core.Contexts;
+using Silk.NET.Input;
 using Hectix.Window;
 
 namespace Hectix.Editor;
 
+using Hectix.ImGui;
 using Hectix.Renderer;
 
 public class EditorApp
 {
     private readonly IHectixWindow window;
+    private HectixImGuiOpenGL? imGuiOpenGL;
     private IHectixRenderer? renderer;
 
     public EditorApp(IHectixWindow window)
@@ -46,6 +50,8 @@ public class EditorApp
         var gl = window.GetGL();
         renderer = new OpenGLRenderer(gl);
         renderer.Initialize();
+        imGuiOpenGL = new();
+        imGuiOpenGL.Initialize((IGLContextSource)window.GetContext(), (IInputContext)window.GetInput());
 
         Console.WriteLine("Editor Loaded!");
     }
@@ -55,9 +61,11 @@ public class EditorApp
         var size = window.Size;
         renderer!.SetViewPort(0, 0, (uint)size.Width, (uint)size.Height);
         renderer.ClearColor(0.1f, 0.1f, 0.1f, 1.0f);
-
         renderer.BeginFrame(deltaTime);
-
+        imGuiOpenGL?.BeginFrame(deltaTime);
+        HectixImGui.Begin("Hi", true);
+        HectixImGui.End();
+        imGuiOpenGL?.EndFrame();
         renderer.EndFrame();
     }
 

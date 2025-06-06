@@ -26,7 +26,7 @@ using Silk.NET.Windowing;
 
 namespace Hectix.ImGui.Backends.OpenGL;
 
-public class ImGuiOpenGL
+public class HectixImGuiOpenGL
 {
     private ImGuiController? controller;
 

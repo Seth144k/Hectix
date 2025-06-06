@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hectix_Window")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20320944717d8307fade8db4816431733d739154")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+daa4268fa29667d89c281c41cca6a4cc0594eda5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hectix_Window")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hectix_Window")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

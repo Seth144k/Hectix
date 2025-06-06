@@ -22,7 +22,7 @@ namespace Hectix.ImGui;
 
 using ImGuiNET;
 
-public static class IMGUI
+public static class HectixImGui
 {
     // MainMenuBar
     public static bool BeginMainMenuBar() => ImGui.BeginMainMenuBar();
