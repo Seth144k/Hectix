@@ -106,3 +106,16 @@ C:/Users/ramsa/OneDrive/Documents/code stuff/C#/Hectix/Hectix_App/obj/Debug/net9
 /home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/Hectix_Window.dll
 /home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/Hectix_Window.pdb
 /home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/obj/Debug/net9.0/Hectix_App.sourcelink.json
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/Silk.NET.SDL.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/Silk.NET.Windowing.Sdl.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/runtimes/ios/native/libSDL2.a
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/runtimes/iossimulator/native/libSDL2.a
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/runtimes/linux-arm/native/libSDL2-2.0.so
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/runtimes/linux-arm64/native/libSDL2-2.0.so
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/runtimes/linux-x64/native/libSDL2-2.0.so
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/runtimes/osx/native/libSDL2-2.0.dylib
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/runtimes/tvos/native/libSDL2.a
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/runtimes/tvossimulator/native/libSDL2.a
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/runtimes/win-arm64/native/SDL2.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/runtimes/win-x64/native/SDL2.dll
+/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_App/bin/Debug/net9.0/runtimes/win-x86/native/SDL2.dll

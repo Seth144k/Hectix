@@ -23,7 +23,7 @@ using System.Numerics;
 
 namespace Hectix.Input;
 
-public class InputManager
+public class SilkInput
 {
     private readonly IKeyboard keyboard;
     private readonly IMouse mouse;
@@ -37,7 +37,7 @@ public class InputManager
     private Vector2 mousePosition;
     private float scrollDelta;
 
-    public InputManager(IInputContext input)
+    public SilkInput(IInputContext input)
     {
         keyboard = input.Keyboards[0];
         mouse = input.Mice[0];

@@ -152,6 +152,27 @@
           }
         }
       },
+      "Silk.NET.SDL/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.Core": "2.22.0",
+          "Silk.NET.Maths": "2.22.0",
+          "Ultz.Native.SDL": "2.30.8"
+        },
+        "compile": {
+          "lib/net6.0/Silk.NET.SDL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Silk.NET.SDL.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/Silk.NET.SDL.targets": {}
+        }
+      },
       "Silk.NET.Windowing/2.22.0": {
         "type": "package",
         "dependencies": {
@@ -189,6 +210,23 @@
         },
         "runtime": {
           "lib/net5.0/Silk.NET.Windowing.Glfw.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Silk.NET.Windowing.Sdl/2.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Silk.NET.SDL": "2.22.0",
+          "Silk.NET.Windowing.Common": "2.22.0"
+        },
+        "compile": {
+          "lib/net6.0/Silk.NET.Windowing.Sdl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Silk.NET.Windowing.Sdl.dll": {
             "related": ".xml"
           }
         }
@@ -311,11 +349,70 @@
           }
         }
       },
+      "Ultz.Native.SDL/2.30.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/Ultz.Native.SDL.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/ios/native/libSDL2.a": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/iossimulator/native/libSDL2.a": {
+            "assetType": "native",
+            "rid": "iossimulator"
+          },
+          "runtimes/linux-arm/native/libSDL2-2.0.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libSDL2-2.0.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libSDL2-2.0.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/libSDL2-2.0.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/tvos/native/libSDL2.a": {
+            "assetType": "native",
+            "rid": "tvos"
+          },
+          "runtimes/tvossimulator/native/libSDL2.a": {
+            "assetType": "native",
+            "rid": "tvossimulator"
+          },
+          "runtimes/win-arm64/native/SDL2.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/SDL2.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/SDL2.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "Hectix_Input/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Silk.NET.Input": "2.22.0"
+          "Silk.NET.Input": "2.22.0",
+          "Silk.NET.Windowing.SDL": "2.22.0"
         },
         "compile": {
           "bin/placeholder/Hectix_Input.dll": {}
@@ -604,6 +701,31 @@
         "silkdotnet_v3.png"
       ]
     },
+    "Silk.NET.SDL/2.22.0": {
+      "sha512": "t73lM7RnEX7otXOblQ38zjDbGfdEseJKHGgIaFien9lKjGp1jg28RLEY+toUXT5kH0DzgXGIoYAs7AkcCFyyyg==",
+      "type": "package",
+      "path": "silk.net.sdl/2.22.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/net6.0/Silk.NET.SDL.targets",
+        "buildTransitive/net6.0/Silk.NET.SDL.targets",
+        "lib/net5.0/Silk.NET.SDL.dll",
+        "lib/net5.0/Silk.NET.SDL.xml",
+        "lib/net6.0/Silk.NET.SDL.dll",
+        "lib/net6.0/Silk.NET.SDL.xml",
+        "lib/netcoreapp3.1/Silk.NET.SDL.dll",
+        "lib/netcoreapp3.1/Silk.NET.SDL.xml",
+        "lib/netstandard2.0/Silk.NET.SDL.dll",
+        "lib/netstandard2.0/Silk.NET.SDL.xml",
+        "lib/netstandard2.1/Silk.NET.SDL.dll",
+        "lib/netstandard2.1/Silk.NET.SDL.xml",
+        "silk.net.sdl.2.22.0.nupkg.sha512",
+        "silk.net.sdl.nuspec",
+        "silkdotnet_v3.png"
+      ]
+    },
     "Silk.NET.Windowing/2.22.0": {
       "sha512": "yKGe/8REdm+T43LdtfUpFUx9eQARwx6wTmEoJ2bANVGQPCvWYC2Qi1+haT6n63dyNIX+iJWKg4++F4TFjg0/Fw==",
       "type": "package",
@@ -652,6 +774,37 @@
         "lib/netstandard2.1/Silk.NET.Windowing.Glfw.xml",
         "silk.net.windowing.glfw.2.22.0.nupkg.sha512",
         "silk.net.windowing.glfw.nuspec",
+        "silkdotnet_v3.png"
+      ]
+    },
+    "Silk.NET.Windowing.Sdl/2.22.0": {
+      "sha512": "IyOJJh8M8VBcjiQ/7U+B+4R4u4gKXDN7PZfwzZ/sgV3eOj2PadDDKxCq11Qzfri2P+XLDxnrVikkNciGkuL/jg==",
+      "type": "package",
+      "path": "silk.net.windowing.sdl/2.22.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Silk.NET.Windowing.Sdl.dll",
+        "lib/net5.0/Silk.NET.Windowing.Sdl.xml",
+        "lib/net6.0-android31.0/Silk.NET.Windowing.Sdl.aar",
+        "lib/net6.0-android31.0/Silk.NET.Windowing.Sdl.dll",
+        "lib/net6.0-android31.0/Silk.NET.Windowing.Sdl.xml",
+        "lib/net6.0-android31.0/app-release.aar",
+        "lib/net6.0-ios16.1/Silk.NET.Windowing.Sdl.dll",
+        "lib/net6.0-ios16.1/Silk.NET.Windowing.Sdl.xml",
+        "lib/net6.0-maccatalyst16.1/Silk.NET.Windowing.Sdl.dll",
+        "lib/net6.0-maccatalyst16.1/Silk.NET.Windowing.Sdl.xml",
+        "lib/net6.0/Silk.NET.Windowing.Sdl.dll",
+        "lib/net6.0/Silk.NET.Windowing.Sdl.xml",
+        "lib/netcoreapp3.1/Silk.NET.Windowing.Sdl.dll",
+        "lib/netcoreapp3.1/Silk.NET.Windowing.Sdl.xml",
+        "lib/netstandard2.0/Silk.NET.Windowing.Sdl.dll",
+        "lib/netstandard2.0/Silk.NET.Windowing.Sdl.xml",
+        "lib/netstandard2.1/Silk.NET.Windowing.Sdl.dll",
+        "lib/netstandard2.1/Silk.NET.Windowing.Sdl.xml",
+        "silk.net.windowing.sdl.2.22.0.nupkg.sha512",
+        "silk.net.windowing.sdl.nuspec",
         "silkdotnet_v3.png"
       ]
     },
@@ -880,6 +1033,36 @@
         "silkdotnet_v3.png",
         "ultz.native.glfw.3.4.0.nupkg.sha512",
         "ultz.native.glfw.nuspec"
+      ]
+    },
+    "Ultz.Native.SDL/2.30.8": {
+      "sha512": "akI6qe9zjA3T9Y5421cfHYKonIkV1rSr3Dgo5qOwxthXXRwTVsnJwb/Ap2x6/6BZcbhczeY+4aUw+2FYJF9LYw==",
+      "type": "package",
+      "path": "ultz.native.sdl/2.30.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/net461/Ultz.Native.SDL.targets",
+        "build/netstandard2.0/Ultz.Native.SDL.targets",
+        "buildTransitive/net461/Ultz.Native.SDL.targets",
+        "buildTransitive/netstandard2.0/Ultz.Native.SDL.targets",
+        "lib/net461/_._",
+        "lib/netstandard2.0/_._",
+        "runtimes/ios/native/libSDL2.a",
+        "runtimes/iossimulator/native/libSDL2.a",
+        "runtimes/linux-arm/native/libSDL2-2.0.so",
+        "runtimes/linux-arm64/native/libSDL2-2.0.so",
+        "runtimes/linux-x64/native/libSDL2-2.0.so",
+        "runtimes/osx/native/libSDL2-2.0.dylib",
+        "runtimes/tvos/native/libSDL2.a",
+        "runtimes/tvossimulator/native/libSDL2.a",
+        "runtimes/win-arm64/native/SDL2.dll",
+        "runtimes/win-x64/native/SDL2.dll",
+        "runtimes/win-x86/native/SDL2.dll",
+        "silkdotnet_v3.png",
+        "ultz.native.sdl.2.30.8.nupkg.sha512",
+        "ultz.native.sdl.nuspec"
       ]
     },
     "Hectix_Input/1.0.0": {

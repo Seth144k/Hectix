@@ -20,15 +20,16 @@
 
 namespace Hectix.App;
 
-using Hectix.Window.SILK;
 using Hectix.Editor;
+using Hectix.Window.SDL;
 
 public class Program
 {
     public static void Main(string[] args)
     {
-        var window = new SilkWindow();
-        var app = new EditorApp(window);
-        app.Run();
+        var window = new SDLWindow();
+        window.Run();
+        //var app = new EditorApp(window);
+        //app.Run();
     }
 }

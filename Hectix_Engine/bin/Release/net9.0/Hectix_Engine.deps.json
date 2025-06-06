@@ -186,17 +186,17 @@
           "runtimes/win-arm64/native/glfw3.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "3.4.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/glfw3.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "3.4.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/glfw3.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "3.4.0.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -206,7 +206,7 @@
         },
         "runtime": {
           "Hectix_Input.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -217,7 +217,7 @@
         },
         "runtime": {
           "Hectix_Renderer.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -254,7 +254,7 @@
     "Microsoft.NET.ILLink.Tasks/9.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4L7wbb3Y4BJgIeSnmAf/C6S/qCs9rT1b0dX72uj3qo0qvUH7D0U1tU5ZlC7A3Wb8E/dXK4caOi4JkdLTVJaXhw==",
+      "sha512": "sha512-ciLi9UDEuFUmIcCKgZ8FZRLhYLYcEnCBYaIGMpruEBKBT/M/W1N08HfUMFKkznHK+TwoOR0zDWWJdesp66HsRg==",
       "path": "microsoft.net.illink.tasks/9.0.5",
       "hashPath": "microsoft.net.illink.tasks.9.0.5.nupkg.sha512"
     },

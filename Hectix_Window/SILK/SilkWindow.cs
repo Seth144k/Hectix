@@ -44,6 +44,12 @@ public class SilkWindow : IHectixWindow
         {
             Title = Title,
             Size = new Vector2D<int>(1920, 1080),
+            API = new GraphicsAPI(
+                ContextAPI.OpenGL,
+                ContextProfile.Compatability,
+                ContextFlags.Default,
+                new APIVersion(3, 3)
+            ),
         };
 
         window = Silk.NET.Windowing.Window.Create(options);

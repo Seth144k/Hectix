@@ -125,6 +125,10 @@
             "Silk.NET.Input": {
               "target": "Package",
               "version": "[2.22.0, )"
+            },
+            "Silk.NET.Windowing.SDL": {
+              "target": "Package",
+              "version": "[2.22.0, )"
             }
           },
           "imports": [

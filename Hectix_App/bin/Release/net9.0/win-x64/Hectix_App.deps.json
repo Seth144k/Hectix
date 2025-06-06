@@ -11,6 +11,7 @@
         "dependencies": {
           "Hectix_Editor": "1.0.0",
           "Hectix_Engine": "1.0.0",
+          "Hectix_Window": "1.0.0",
           "Microsoft.NET.ILLink.Tasks": "9.0.5",
           "System.Runtime.CompilerServices.Unsafe": "6.1.2",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "9.0.5"
@@ -700,49 +701,49 @@
         },
         "native": {
           "Microsoft.DiaSymReader.Native.amd64.dll": {
-            "fileVersion": "14.42.34436.0"
+            "fileVersion": "0.0.0.0"
           },
           "System.IO.Compression.Native.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "clretwrc.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "clrgc.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "clrgcexp.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "clrjit.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "coreclr.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "createdump.exe": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "hostfxr.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "hostpolicy.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "mscordaccore.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "mscordaccore_amd64_amd64_9.0.525.21509.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "mscordbi.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "mscorrc.dll": {
-            "fileVersion": "9.0.525.21509"
+            "fileVersion": "0.0.0.0"
           },
           "msquic.dll": {
-            "fileVersion": "2.4.8.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -932,7 +933,7 @@
       "Ultz.Native.GLFW/3.4.0": {
         "native": {
           "runtimes/win-x64/native/glfw3.dll": {
-            "fileVersion": "3.4.0.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -940,11 +941,12 @@
         "dependencies": {
           "Hectix_Engine": "1.0.0",
           "Hectix_ImGui": "1.0.0",
+          "Hectix_Window": "1.0.0",
           "Silk.NET.OpenGL.Extensions.ImGui": "2.22.0"
         },
         "runtime": {
           "Hectix_Editor.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -958,7 +960,7 @@
         },
         "runtime": {
           "Hectix_Engine.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -969,7 +971,7 @@
         },
         "runtime": {
           "Hectix_ImGui.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -980,7 +982,7 @@
         },
         "runtime": {
           "Hectix_Input.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -991,7 +993,23 @@
         },
         "runtime": {
           "Hectix_Renderer.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Hectix_Window/1.0.0": {
+        "dependencies": {
+          "Hectix_ImGui": "1.0.0",
+          "Hectix_Input": "1.0.0",
+          "Hectix_Renderer": "1.0.0",
+          "Silk.NET.Input": "2.22.0",
+          "Silk.NET.OpenGL": "2.22.0",
+          "Silk.NET.Windowing": "2.22.0"
+        },
+        "runtime": {
+          "Hectix_Window.dll": {
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1040,7 +1058,7 @@
     "Microsoft.NET.ILLink.Tasks/9.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4L7wbb3Y4BJgIeSnmAf/C6S/qCs9rT1b0dX72uj3qo0qvUH7D0U1tU5ZlC7A3Wb8E/dXK4caOi4JkdLTVJaXhw==",
+      "sha512": "sha512-ciLi9UDEuFUmIcCKgZ8FZRLhYLYcEnCBYaIGMpruEBKBT/M/W1N08HfUMFKkznHK+TwoOR0zDWWJdesp66HsRg==",
       "path": "microsoft.net.illink.tasks/9.0.5",
       "hashPath": "microsoft.net.illink.tasks.9.0.5.nupkg.sha512"
     },
@@ -1198,6 +1216,11 @@
       "sha512": ""
     },
     "Hectix_Renderer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hectix_Window/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

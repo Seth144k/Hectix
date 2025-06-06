@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7eYGSdXQLNM=",
+  "dgSpecHash": "01N30+CrZN0=",
   "success": true,
   "projectFilePath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Engine/Hectix_Engine.csproj",
   "expectedPackageFiles": [
@@ -14,15 +14,18 @@
     "/home/blehcat/.nuget/packages/silk.net.input.glfw/2.22.0/silk.net.input.glfw.2.22.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/silk.net.maths/2.22.0/silk.net.maths.2.22.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/silk.net.opengl/2.22.0/silk.net.opengl.2.22.0.nupkg.sha512",
+    "/home/blehcat/.nuget/packages/silk.net.sdl/2.22.0/silk.net.sdl.2.22.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/silk.net.windowing/2.22.0/silk.net.windowing.2.22.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/silk.net.windowing.common/2.22.0/silk.net.windowing.common.2.22.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/silk.net.windowing.glfw/2.22.0/silk.net.windowing.glfw.2.22.0.nupkg.sha512",
+    "/home/blehcat/.nuget/packages/silk.net.windowing.sdl/2.22.0/silk.net.windowing.sdl.2.22.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
     "/home/blehcat/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
-    "/home/blehcat/.nuget/packages/ultz.native.glfw/3.4.0/ultz.native.glfw.3.4.0.nupkg.sha512"
+    "/home/blehcat/.nuget/packages/ultz.native.glfw/3.4.0/ultz.native.glfw.3.4.0.nupkg.sha512",
+    "/home/blehcat/.nuget/packages/ultz.native.sdl/2.30.8/ultz.native.sdl.2.30.8.nupkg.sha512"
   ],
   "logs": []
 }
