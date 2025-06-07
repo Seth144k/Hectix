@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kbBChIstGxc=",
+  "dgSpecHash": "GBk5hQJocnM=",
   "success": true,
   "projectFilePath": "/home/blehcat/Documents/code stuff/C#/Hectix/Hectix_Window/Hectix_Window.csproj",
   "expectedPackageFiles": [
@@ -29,7 +29,9 @@
     "/home/blehcat/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
     "/home/blehcat/.nuget/packages/ultz.native.glfw/3.4.0/ultz.native.glfw.3.4.0.nupkg.sha512",
-    "/home/blehcat/.nuget/packages/ultz.native.sdl/2.30.8/ultz.native.sdl.2.30.8.nupkg.sha512"
+    "/home/blehcat/.nuget/packages/ultz.native.sdl/2.30.8/ultz.native.sdl.2.30.8.nupkg.sha512",
+    "/home/blehcat/.nuget/packages/microsoft.netcore.app.runtime.win-x64/9.0.5/microsoft.netcore.app.runtime.win-x64.9.0.5.nupkg.sha512",
+    "/home/blehcat/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/9.0.5/microsoft.aspnetcore.app.runtime.win-x64.9.0.5.nupkg.sha512"
   ],
   "logs": []
 }

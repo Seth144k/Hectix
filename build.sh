@@ -1,6 +1,8 @@
 #!/bin/bash
 
-TARGET="linux-64"
+TARGET="linux-x64"
+
+set -e
 
 if [[ "$1" == "windows64" ]]; then
     TARGET="win-x64"
@@ -22,6 +24,7 @@ else
 fi
 
 cd Hectix_App || exit 1
+
 # publishes to Hectix_App/bin/Release/net9.0/publish
 dotnet restore
-dotnet publish -c Release -r $TARGET --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true
+dotnet publish -c Release -r $TARGET --self-contained true /p:PublishSingleFile=false /p:IncludeNativeLibrariesForSelfExtract=true

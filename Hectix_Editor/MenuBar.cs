@@ -27,17 +27,17 @@ public class MenuBar
 {
     public void Render()
     {
-        /*IMGUI.BeginMainMenuBar();
-        if (IMGUI.BeginMenu("Scene"))
+        HectixImGui.BeginMainMenuBar();
+        if (HectixImGui.BeginMenu("Scene"))
         {
-            if (IMGUI.MenuItem("New Scene"))
+            if (HectixImGui.MenuItem("New Scene"))
             {
             }
-            IMGUI.EndMenu();
+            HectixImGui.EndMenu();
         }
-        if (IMGUI.BeginMenu("Project"))
+        if (HectixImGui.BeginMenu("Project"))
         {
-            if (IMGUI.MenuItem("New Project"))
+            if (HectixImGui.MenuItem("New Project"))
             {
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
                 {
@@ -47,12 +47,12 @@ public class MenuBar
                     return;
                 }
             }
-            IMGUI.EndMenu();
+            HectixImGui.EndMenu();
         }
-        if (IMGUI.BeginMenu("Editor"))
+        if (HectixImGui.BeginMenu("Editor"))
         {
 
         }
-        IMGUI.EndMainMenuBar();*/
+        HectixImGui.EndMainMenuBar();
     }
 }

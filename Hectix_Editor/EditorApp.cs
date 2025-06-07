@@ -23,17 +23,20 @@ using Hectix.ImGui.Backends.OpenGL;
 using Silk.NET.Core.Contexts;
 using Silk.NET.Input;
 using Hectix.Window;
+using Hectix.Engine.Entities;
+using Hectix.Editor.Panels;
 
 namespace Hectix.Editor;
 
-using Hectix.ImGui;
-using Hectix.Renderer;
 
 public class EditorApp
 {
+    public LinkedList<GameObject> GameObjects { get; } = new();
     private readonly IHectixWindow window;
     private HectixImGuiOpenGL? imGuiOpenGL;
-    private IHectixRenderer? renderer;
+    private OpenGLRenderer? renderer;
+    private readonly MenuBar menuBar = new();
+    public HierarchyPanel hierarchyPanel;
 
     public EditorApp(IHectixWindow window)
     {
@@ -41,6 +44,7 @@ public class EditorApp
         window.OnLoad += OnLoad;
         window.OnRender += OnRender;
         window.OnClosing += OnClosing;
+        hierarchyPanel = new(this);
     }
 
     public void Run() => window.Run();
@@ -63,8 +67,8 @@ public class EditorApp
         renderer.ClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         renderer.BeginFrame(deltaTime);
         imGuiOpenGL?.BeginFrame(deltaTime);
-        HectixImGui.Begin("Hi", true);
-        HectixImGui.End();
+        menuBar.Render();
+        hierarchyPanel.Render();
         imGuiOpenGL?.EndFrame();
         renderer.EndFrame();
     }

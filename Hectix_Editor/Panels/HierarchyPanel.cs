@@ -18,19 +18,16 @@
  * along with Hectix Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+using Hectix.ImGui;
+
 namespace Hectix.Editor.Panels;
 
-using Hectix.Engine.Entities;
-using ImGuiNET;
-
-public class HierarchyPanel : IPanel
+public class HierarchyPanel(EditorApp editor) : IPanel
 {
-    public LinkedList<GameObject>? GameObjects { get; set; }
-    private readonly ImGuiWindowFlags WindowFlags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoMove;
     public void Render()
     {
-        ImGui.Begin("Hierarchy", WindowFlags);
+        HectixImGui.Begin("Hierarchy", false, HectixImGuiWindowFlags.NoMove);
 
-        ImGui.End();
+        HectixImGui.End();
     }
 }

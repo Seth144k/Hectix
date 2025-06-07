@@ -18,18 +18,64 @@
  * along with Hectix Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-namespace Hectix.App;
-
+using Hectix.Window.SILK;
 using Hectix.Editor;
 using Hectix.Window.SDL;
 
-public class Program
+using System;
+using Silk.NET.Windowing;
+using Silk.NET.OpenGL;
+
+class SilkWindow
 {
-    public static void Main(string[] args)
+    private IWindow _window = null!;
+    private GL _gl = null!;
+
+    public SilkWindow()
     {
-        var window = new SDLWindow();
-        window.Run();
-        //var app = new EditorApp(window);
-        //app.Run();
+        var options = WindowOptions.Default;
+        options.Size = new Silk.NET.Maths.Vector2D<int>(800, 600);
+        options.Title = "Test Silk.NET Window";
+
+        _window = Window.Create(options);
+
+        _window.Load += OnLoad;
+        _window.Render += OnRender;
+        _window.Closing += OnClosing;
+    }
+
+    private void OnLoad()
+    {
+        // Initialize OpenGL context
+        _gl = GL.GetApi(_window);
+
+        // Setup clear color (optional)
+        _gl.ClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+    }
+
+    private void OnRender(double delta)
+    {
+        // Clear the screen each frame
+        _gl.Clear((uint)ClearBufferMask.ColorBufferBit);
+    }
+
+    private void OnClosing()
+    {
+        Console.WriteLine("Window is closing!");
+    }
+
+    public void Run()
+    {
+        _window.Run();
+    }
+}
+
+class Program
+{
+    private static void Main()
+    {
+        var window = new HectixSilkWindow();
+        var app = new EditorApp(window);
+        app.Run();
     }
 }

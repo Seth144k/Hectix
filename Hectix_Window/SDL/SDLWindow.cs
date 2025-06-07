@@ -20,7 +20,7 @@ public class SDLWindow : IHectixWindow
         set => _window.Title = value;
     }
 
-    public Size Size => new Size(_window.Size.X, _window.Size.Y);
+    public Size Size => new(_window.Size.X, _window.Size.Y);
 
     public SDLWindow(int width = 1920, int height = 1080, string title = "Hectix Engine")
     {

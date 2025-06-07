@@ -843,6 +843,19 @@
           }
         }
       },
+      "Silk.NET.SDL/2.22.0": {
+        "dependencies": {
+          "Silk.NET.Core": "2.22.0",
+          "Silk.NET.Maths": "2.22.0",
+          "Ultz.Native.SDL": "2.30.8"
+        },
+        "runtime": {
+          "lib/net6.0/Silk.NET.SDL.dll": {
+            "assemblyVersion": "2.22.0.0",
+            "fileVersion": "2.22.0.0"
+          }
+        }
+      },
       "Silk.NET.Windowing/2.22.0": {
         "dependencies": {
           "Silk.NET.Windowing.Common": "2.22.0",
@@ -873,6 +886,18 @@
           }
         }
       },
+      "Silk.NET.Windowing.Sdl/2.22.0": {
+        "dependencies": {
+          "Silk.NET.SDL": "2.22.0",
+          "Silk.NET.Windowing.Common": "2.22.0"
+        },
+        "runtime": {
+          "lib/net6.0/Silk.NET.Windowing.Sdl.dll": {
+            "assemblyVersion": "2.22.0.0",
+            "fileVersion": "2.22.0.0"
+          }
+        }
+      },
       "System.Buffers/4.4.0": {},
       "System.Memory/4.5.5": {},
       "System.Numerics.Vectors/4.5.0": {},
@@ -886,6 +911,13 @@
       "Ultz.Native.GLFW/3.4.0": {
         "native": {
           "runtimes/win-x64/native/glfw3.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Ultz.Native.SDL/2.30.8": {
+        "native": {
+          "runtimes/win-x64/native/SDL2.dll": {
             "fileVersion": "0.0.0.0"
           }
         }
@@ -931,7 +963,8 @@
       },
       "Hectix_Input/1.0.0": {
         "dependencies": {
-          "Silk.NET.Input": "2.22.0"
+          "Silk.NET.Input": "2.22.0",
+          "Silk.NET.Windowing.Sdl": "2.22.0"
         },
         "runtime": {
           "Hectix_Input.dll": {
@@ -958,7 +991,9 @@
           "Hectix_Renderer": "1.0.0",
           "Silk.NET.Input": "2.22.0",
           "Silk.NET.OpenGL": "2.22.0",
-          "Silk.NET.Windowing": "2.22.0"
+          "Silk.NET.Windowing": "2.22.0",
+          "Silk.NET.Windowing.Glfw": "2.22.0",
+          "Silk.NET.Windowing.Sdl": "2.22.0"
         },
         "runtime": {
           "Hectix_Window.dll": {
@@ -1078,6 +1113,13 @@
       "path": "silk.net.opengl.extensions.imgui/2.22.0",
       "hashPath": "silk.net.opengl.extensions.imgui.2.22.0.nupkg.sha512"
     },
+    "Silk.NET.SDL/2.22.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t73lM7RnEX7otXOblQ38zjDbGfdEseJKHGgIaFien9lKjGp1jg28RLEY+toUXT5kH0DzgXGIoYAs7AkcCFyyyg==",
+      "path": "silk.net.sdl/2.22.0",
+      "hashPath": "silk.net.sdl.2.22.0.nupkg.sha512"
+    },
     "Silk.NET.Windowing/2.22.0": {
       "type": "package",
       "serviceable": true,
@@ -1098,6 +1140,13 @@
       "sha512": "sha512-hBNxNSLvx/jdfvbU6oCsXcgLfqf9hMlEc6Mq/rllJ0eUTLloacuOZHTM8V702QGf7hOR+Mo4bTFqTqBnC0CM7g==",
       "path": "silk.net.windowing.glfw/2.22.0",
       "hashPath": "silk.net.windowing.glfw.2.22.0.nupkg.sha512"
+    },
+    "Silk.NET.Windowing.Sdl/2.22.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IyOJJh8M8VBcjiQ/7U+B+4R4u4gKXDN7PZfwzZ/sgV3eOj2PadDDKxCq11Qzfri2P+XLDxnrVikkNciGkuL/jg==",
+      "path": "silk.net.windowing.sdl/2.22.0",
+      "hashPath": "silk.net.windowing.sdl.2.22.0.nupkg.sha512"
     },
     "System.Buffers/4.4.0": {
       "type": "package",
@@ -1147,6 +1196,13 @@
       "sha512": "sha512-Iy22JopynbOJ32vA0lBhFEzGi65GQJBuJHYBYRBpydrDpNoTiHnjIXfA65Gu+8qsOr/ZEoIF8r9aHCgAXuO6DA==",
       "path": "ultz.native.glfw/3.4.0",
       "hashPath": "ultz.native.glfw.3.4.0.nupkg.sha512"
+    },
+    "Ultz.Native.SDL/2.30.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-akI6qe9zjA3T9Y5421cfHYKonIkV1rSr3Dgo5qOwxthXXRwTVsnJwb/Ap2x6/6BZcbhczeY+4aUw+2FYJF9LYw==",
+      "path": "ultz.native.sdl/2.30.8",
+      "hashPath": "ultz.native.sdl.2.30.8.nupkg.sha512"
     },
     "Hectix_Editor/1.0.0": {
       "type": "project",
