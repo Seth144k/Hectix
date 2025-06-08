@@ -1,7 +1,0 @@
-C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_App\bin\Release\net9.0\win-x64\publish\Hectix_App.pdb
-C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_App\bin\Release\net9.0\win-x64\publish\Hectix_Editor.pdb
-C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_App\bin\Release\net9.0\win-x64\publish\Hectix_Engine.pdb
-C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_App\bin\Release\net9.0\win-x64\publish\Hectix_ImGui.pdb
-C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_App\bin\Release\net9.0\win-x64\publish\Hectix_Input.pdb
-C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_App\bin\Release\net9.0\win-x64\publish\Hectix_Renderer.pdb
-C:\Users\ramsa\OneDrive\Documents\code stuff\C#\Hectix\Hectix_App\bin\Release\net9.0\win-x64\publish\Hectix_App.exe
