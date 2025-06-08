@@ -18,15 +18,51 @@
  * along with Hectix Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+using Hectix.Engine.Entities;
 using Hectix.ImGui;
 
 namespace Hectix.Editor.Panels;
 
-public class HierarchyPanel(EditorApp editor) : IPanel
+public class HierarchyPanel(HectixEditorApp editor) : IPanel
 {
+    public GameObject? SelectedGameObject { get; set; }
+
     public void Render()
     {
-        HectixImGui.Begin("Hierarchy", false, HectixImGuiWindowFlags.NoMove);
+        bool clicked = false;
+
+        HectixImGui.SetNextWindowPosition(new System.Numerics.Vector2(0, 20));
+        HectixImGui.SetNextWindowSize(new System.Numerics.Vector2(250, 690));
+        HectixImGui.Begin("Hierarchy", HectixImGuiWindowFlags.NoMove | HectixImGuiWindowFlags.NoResize | HectixImGuiWindowFlags.NoCollapse);
+
+        if (HectixImGui.BeginPopupContextWindow("context menu", HectixImGuiPopupFlags.MouseButtonRight))
+        {
+            if (HectixImGui.MenuItem("Add GameObject"))
+            {
+                editor.CurrentScene.AddGameObject("New GameObject");
+            }
+            HectixImGui.EndPopup();
+        }
+
+        if (editor.CurrentScene.GameObjects != null)
+        {
+            foreach (var go in editor.CurrentScene.GameObjects)
+            {
+                bool selected = go == SelectedGameObject;
+                if (HectixImGui.Selectable(go.Name, selected))
+                {
+                    SelectedGameObject = go;
+                    editor.SelectedGameObject = go;
+                    clicked = true;
+                }
+            }
+
+            if (HectixImGui.IsWindowHovered() && HectixImGui.IsMouseClicked(HectixImGuiMouseButton.LEFT) && !clicked)
+            {
+                SelectedGameObject = null;
+                editor.SelectedGameObject = null;
+            }
+        }
 
         HectixImGui.End();
     }

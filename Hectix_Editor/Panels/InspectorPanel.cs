@@ -18,7 +18,8 @@
  * along with Hectix Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-using ImGuiNET;
+
+using Hectix.ImGui;
 
 namespace Hectix.Editor.Panels;
 
@@ -26,6 +27,11 @@ public class InspectorPanel : IPanel
 {
     public void Render()
     {
+        HectixImGui.SetNextWindowPosition(new System.Numerics.Vector2(1669, 20));
+        HectixImGui.SetNextWindowSize(new System.Numerics.Vector2(250, 690));
 
+        HectixImGui.Begin("Inspector", HectixImGuiWindowFlags.NoMove | HectixImGuiWindowFlags.NoResize | HectixImGuiWindowFlags.NoCollapse);
+
+        HectixImGui.End();
     }
 }

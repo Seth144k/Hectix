@@ -33,6 +33,16 @@ public class Scene
 
     public void AddGameObject(string name)
     {
+        // prevents duplicates
+        if (GameObjects.Any(go => go.Name == name))
+        {
+            int count = 1;
+            string baseName = name;
+            while (GameObjects.Any(go => go.Name == name))
+            {
+                name = $"{baseName} ({count++})";
+            }
+        }
         GameObjects.AddLast(new GameObject(name));
     }
 

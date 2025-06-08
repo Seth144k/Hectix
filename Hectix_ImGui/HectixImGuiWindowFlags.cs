@@ -2,7 +2,7 @@ namespace Hectix.ImGui;
 
 using ImGuiNET;
 
-public static class HectixImGuiWindowFlags
+public class HectixImGuiWindowFlags
 {
     public static ImGuiWindowFlags None => ImGuiWindowFlags.None;
     public static ImGuiWindowFlags NoTitleBar => ImGuiWindowFlags.NoTitleBar;

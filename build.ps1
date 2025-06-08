@@ -2,7 +2,7 @@ param (
     [string]$Platform
 )
 
-$TARGET = "linux-64"
+$TARGET = "linux-x64"
 
 switch ($Platform) {
     "windows64"      { $TARGET = "win-x64" }
@@ -12,9 +12,6 @@ switch ($Platform) {
     "linux64"        { $TARGET = "linux-x64" }
     "linux-arm64"    { $TARGET = "linux-arm64" }
     "linux-arm32"    { $TARGET = "linux-arm" }
-
-    "mac64"          { $TARGET = "osx-x64" }
-    "mac-arm64"      { $TARGET = "osx-arm64" }
 
     default {
         Write-Host "Incorrect Platform Specified"
@@ -31,5 +28,5 @@ Set-Location "Hectix_App"
 
 dotnet restore
 dotnet publish -c Release -r $TARGET --self-contained `
-    /p:PublishSingleFile=true `
+    /p:PublishSingleFile=false `
     /p:IncludeNativeLibrariesForSelfExtract=true

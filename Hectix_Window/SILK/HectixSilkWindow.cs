@@ -71,8 +71,9 @@ public class HectixSilkWindow : IHectixWindow
     public Size Size => new(window!.Size.X, window!.Size.Y);
     Size IHectixWindow.Size => Size;
 
-    public object GetContext() => window!;
-    public object GetInput() => input!;
+    public IGLContextSource GetContext() => window!;
+
+    public IInputContext GetInput() => input!;
     public GL GetGL() => gl!;
     public IGLContextSource GetGLContextSource() => window!;
 }

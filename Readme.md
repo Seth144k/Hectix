@@ -36,3 +36,6 @@ Hectix Engine is currently supported on Windows and Linux only, due to Apple's l
 ## License
 
 Hectix Engine is licensed under the [GNU General Public License v3.0](LICENSE).
+
+This project uses [Silk.NET](https://github.com/dotnet/Silk.NET), which is MIT-licensed.  
+Please see [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for full third-party license information.

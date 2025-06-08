@@ -20,35 +20,41 @@
 
 namespace Hectix.ImGui;
 
+using System;
+using System.Data;
 using ImGuiNET;
 
 public static class HectixImGui
 {
-    // MainMenuBar
+    // menus
+    public static bool IsItemClicked() => ImGui.IsItemClicked();
     public static bool BeginMainMenuBar() => ImGui.BeginMainMenuBar();
     public static void EndMainMenuBar() => ImGui.EndMainMenuBar();
 
-    // Menus
     public static bool BeginMenu(string label) => ImGui.BeginMenu(label);
     public static void EndMenu() => ImGui.EndMenu();
 
     public static bool MenuItem(string label) => ImGui.MenuItem(label);
 
-    // Windows
-    public static bool Begin(string name, bool open = default, ImGuiWindowFlags flags = 0)
+    // windows
+    public static bool Begin(string name, bool open = default, ImGuiWindowFlags flags = ImGuiWindowFlags.None)
         => ImGui.Begin(name, ref open, flags);
+    public static bool Begin(string name, ImGuiWindowFlags flags = ImGuiWindowFlags.None)
+        => ImGui.Begin(name, flags);
     public static void End() => ImGui.End();
+    public static void SetNextWindowPosition(System.Numerics.Vector2 position) => ImGui.SetNextWindowPos(position);
+    public static void SetNextWindowSize(System.Numerics.Vector2 size) => ImGui.SetNextWindowSize(size);
 
-    // Text
+    // text
     public static void Text(string text) => ImGui.Text(text);
     public static void TextColored(System.Numerics.Vector4 col, string text) => ImGui.TextColored(col, text);
     public static void TextWrapped(string text) => ImGui.TextWrapped(text);
 
-    // Buttons
+    // buttons
     public static bool Button(string label) => ImGui.Button(label);
     public static bool SmallButton(string label) => ImGui.SmallButton(label);
 
-    // Input
+    // input
     public static bool InputText(string label, ref string text, uint maxLength = 256, ImGuiInputTextFlags flags = 0)
         => ImGui.InputText(label, ref text, maxLength, flags);
 
@@ -58,51 +64,76 @@ public static class HectixImGui
     public static bool InputFloat(string label, ref float value, float step = 0, float stepFast = 0, string format = "%.3f", ImGuiInputTextFlags flags = 0)
         => ImGui.InputFloat(label, ref value, step, stepFast, format, flags);
 
-    // Checkboxes
+    // checkboxes
     public static bool Checkbox(string label, ref bool value) => ImGui.Checkbox(label, ref value);
 
-    // Sliders
+    // sliders
     public static bool SliderFloat(string label, ref float value, float min, float max, string format = "%.3f", ImGuiSliderFlags flags = 0)
         => ImGui.SliderFloat(label, ref value, min, max, format, flags);
 
     public static bool SliderInt(string label, ref int value, int min, int max, string format = "%d", ImGuiSliderFlags flags = 0)
         => ImGui.SliderInt(label, ref value, min, max, format, flags);
 
-    // Combo boxes
+    // combos
     public static bool BeginCombo(string label, string previewValue, ImGuiComboFlags flags = 0)
         => ImGui.BeginCombo(label, previewValue, flags);
     public static void EndCombo() => ImGui.EndCombo();
 
-    // Selectable
+    // selectable
     public static bool Selectable(string label, bool selected = false, ImGuiSelectableFlags flags = 0, System.Numerics.Vector2 size = default)
         => ImGui.Selectable(label, selected, flags, size);
     public static void EndChild() => ImGui.EndChild();
 
-    // Columns
+    // columns
     public static void Columns(int count = 1, string? id = null, bool border = true)
         => ImGui.Columns(count, id, border);
     public static void NextColumn() => ImGui.NextColumn();
 
-    // Tree nodes
+    // tree nodes
     public static bool TreeNode(string label) => ImGui.TreeNode(label);
-    public static void TreePop() => ImGui.TreePop();
 
-    // Focus
+    public static void TreePop() => ImGui.TreePop();
+    public static bool TreeNodeEx(string label) => ImGui.TreeNodeEx(label);
+    public static bool TreeNodeEx(string label, ImGuiTreeNodeFlags flags) => ImGui.TreeNodeEx(label, flags);
+
+    // focus
     public static void SetKeyboardFocusHere(int offset = 0) => ImGui.SetKeyboardFocusHere(offset);
 
-    // Misc
+    // misc
     public static void Separator() => ImGui.Separator();
     public static void SameLine(float offsetFromStartX = 0, float spacing = -1) => ImGui.SameLine(offsetFromStartX, spacing);
     public static void NewLine() => ImGui.NewLine();
 
-    // Tooltip
+    // tooltips
     public static void BeginTooltip() => ImGui.BeginTooltip();
     public static void EndTooltip() => ImGui.EndTooltip();
     public static void SetTooltip(string text) => ImGui.SetTooltip(text);
 
-    // Color editor
+    // colors
     public static bool ColorEdit3(string label, ref System.Numerics.Vector3 col, ImGuiColorEditFlags flags = 0)
         => ImGui.ColorEdit3(label, ref col, flags);
     public static bool ColorEdit4(string label, ref System.Numerics.Vector4 col, ImGuiColorEditFlags flags = 0)
         => ImGui.ColorEdit4(label, ref col, flags);
+
+    public static bool IsWindowHovered()
+        => ImGui.IsWindowHovered();
+
+    public static bool IsMouseClicked(ImGuiMouseButton button)
+        => ImGui.IsMouseClicked(button);
+    public static bool IsMouseClicked(ImGuiMouseButton button, bool repeat)
+        => ImGui.IsMouseClicked(button, repeat);
+    public static HectixImGuiIOPtr GetIO()
+        => new(ImGui.GetIO());
+    public static void CreateContext()
+        => ImGui.CreateContext();
+    public static bool BeginPopupContextWindow(string id) => ImGui.BeginPopupContextWindow(id);
+    public static bool BeginPopupContextWindow(string id, ImGuiPopupFlags flags) => ImGui.BeginPopupContextWindow(id, flags);
+    public static void EndPopup() => ImGui.EndPopup();
+    /*public static ImGuiViewportPtr DockSpaceOverViewport()
+    {
+        //return ImGui.DockSpaceOverViewport(ImGui.GetMainViewport(), ImGuiDockNodeFlags.None);
+    }*/
+
+    // fonts
+
 }

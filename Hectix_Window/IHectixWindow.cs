@@ -18,6 +18,8 @@
  * along with Hectix Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+using Silk.NET.Core.Contexts;
+using Silk.NET.Input;
 using Silk.NET.OpenGL;
 
 namespace Hectix.Window;
@@ -32,7 +34,7 @@ public interface IHectixWindow
     void Run();
     Size Size { get; }
 
-    object GetContext();
-    object GetInput();
+    IGLContextSource GetContext();
+    IInputContext GetInput();
     GL GetGL();
 }
