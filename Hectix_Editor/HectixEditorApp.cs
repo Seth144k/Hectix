@@ -32,6 +32,8 @@ public class HectixEditorApp
 {
     public Scene CurrentScene { get; set; } = new Scene();
     private HectixImGuiIOPtr? io;
+    public HectixProject CurrentProject { get; private set; } = null!;
+    private readonly string? projectFilePath;
     private MainDockSpace? mainDockSpace;
     public GameObject? SelectedGameObject { get; set; }
     private readonly IHectixWindow window;
@@ -40,9 +42,11 @@ public class HectixEditorApp
     private readonly MenuBar menuBar = new();
     public HierarchyPanel hierarchyPanel;
 
-    public HectixEditorApp(IHectixWindow window)
+    public HectixEditorApp(IHectixWindow window, string? projectFilePath)
     {
         this.window = window;
+        this.projectFilePath = projectFilePath;
+        window.Title = "Hectix Engine - Editor";
         window.OnLoad += OnLoad;
         window.OnRender += OnRender;
         window.OnClosing += OnClosing;
@@ -62,9 +66,12 @@ public class HectixEditorApp
         renderer.Initialize();
         imGuiOpenGL = new();
         imGuiOpenGL.Initialize(window.GetContext(), window.GetInput());
-        Scene temp = new();
-        temp.AddGameObject("hello");
-        CurrentScene = temp;
+        //Scene temp = new();
+        //CurrentScene = temp;
+        if (!string.IsNullOrEmpty(projectFilePath))
+        {
+            CurrentScene.Load(projectFilePath);
+        }
 
         Console.WriteLine("Editor Loaded!");
     }
@@ -78,7 +85,6 @@ public class HectixEditorApp
         imGuiOpenGL?.BeginFrame(deltaTime);
         menuBar.Render();
         mainDockSpace?.Render();
-        //hierarchyPanel.Render();
         imGuiOpenGL?.EndFrame();
         renderer.EndFrame();
     }

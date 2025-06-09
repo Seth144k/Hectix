@@ -1,0 +1,10 @@
+# Hectix Engine Project File
+# You may edit this project file however you see fit
+
+project_name = "Hectix Game"
+project_version = "1.0.0"
+
+main_scene = "Scenes/Main.hectixscene"
+
+[paths]
+scenes = "scenes/Scenes"

@@ -23,10 +23,15 @@ using Hectix.Editor;
 
 class Program
 {
-    private static void Main()
+    private static void Main(string[] args)
     {
         var window = new HectixSilkWindow();
-        var app = new HectixEditorApp(window);
-        app.Run();
+
+        if (args.Length == 0)
+        {
+            new HectixEditorApp(window, null).Run();
+            return;
+        }
+        new HectixEditorApp(window, args[0].ToString()).Run();
     }
 }

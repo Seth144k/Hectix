@@ -1,7 +1,7 @@
 # Hectix Engine
 
 ## What Is Hectix Engine?
-Hectix Engine is a fully featured 2D game engine written entirely in C# 9.0 by Seth Israel using Silk.NET for graphics and rendering. Hectix Engine uses Lua as the scripting language, allowing a fast, easy, and powerful way to create games on your own.
+Hectix Engine will be a fully featured 2D game engine written entirely in C# 9.0 by Seth Israel using Silk.NET for graphics and rendering. Hectix Engine uses Lua as the scripting language, allowing a fast, easy, and powerful way to create games on your own.
 
 ## How To Run
 Hectix Engine requires both the Dotnet SDK and the Dotnet Runtime version 9.0 or above to work. Download the source or clone, and open the Hectix.sln in something like Visual Studio, or Visual Studio Code (VSCode). Hectix Engine hasn't been tested with any other IDE, but there is likely a similar process. If you are using VSCode you would simply cd into the Hectix_App directory, and enter ```dotnet run```. Be aware that Hectix is developed using VSCode as the IDE so possibly some features of intelliSense, code snippets, and debugging, may not work as well on others.

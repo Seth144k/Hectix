@@ -46,6 +46,21 @@ public class Scene
         GameObjects.AddLast(new GameObject(name));
     }
 
+    public void AddGameObject(GameObject newGameObject)
+    {
+        // prevents duplicates
+        if (GameObjects.Any(go => go.Name == newGameObject.Name))
+        {
+            int count = 1;
+            string baseName = newGameObject.Name;
+            while (GameObjects.Any(go => go.Name == newGameObject.Name))
+            {
+                newGameObject.Name = $"{baseName} ({count++})";
+            }
+        }
+        GameObjects.AddLast(newGameObject);
+    }
+
     public void Save(string path)
     {
         var options = new JsonSerializerOptions
@@ -57,17 +72,18 @@ public class Scene
         File.WriteAllText(path, json);
     }
 
-    public static Scene Load(string path)
+    public void Load(string path)
     {
         if (!File.Exists(path))
             throw new FileNotFoundException("Scene file not found", path);
 
         string json = File.ReadAllText(path);
-        Scene? loadedScene = JsonSerializer.Deserialize<Scene>(json);
+        var loaded = JsonSerializer.Deserialize<Scene>(json);
 
-        if (loadedScene == null)
+        if (loaded == null)
             throw new Exception("Failed to deserialize scene.");
 
-        return loadedScene;
+        // Copy loaded data into current instance
+        GameObjects = loaded.GameObjects;
     }
 }

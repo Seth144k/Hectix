@@ -54,6 +54,7 @@ public class HierarchyPanel(HectixEditorApp editor) : IPanel
                     SelectedGameObject = go;
                     editor.SelectedGameObject = go;
                     clicked = true;
+
                 }
             }
 

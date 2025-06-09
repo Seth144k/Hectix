@@ -29,7 +29,7 @@ public class SceneManager
         if (!File.Exists(path))
             throw new FileNotFoundException("Scene file not found", path);
 
-        CurrentScene = Scene.Load(path);
+        //CurrentScene = Scene.Load(path);
     }
 
 }
